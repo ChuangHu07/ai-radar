@@ -1,0 +1,17 @@
+<context>
+{{公式前后的原文段落}}
+</context>
+<equation id="{{eq_id}}">
+{{latex}}
+</equation>
+<symbol_info>
+{{d1 中该公式的 symbols 与 purpose}}
+</symbol_info>
+<modifies>
+{{d1 中该公式的 modifies 字段}}
+</modifies>
+<knowledge_map>
+{{d2.knowledge_map 中 L0–L2 的 id 与 term}}
+</knowledge_map>
+
+请按公式五步法讲解这个公式。

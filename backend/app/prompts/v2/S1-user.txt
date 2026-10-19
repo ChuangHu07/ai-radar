@@ -1,0 +1,37 @@
+<paper>
+arXiv ID：{{arxiv_id}}
+标题：{{title}}
+作者：{{authors}}
+分类：{{categories}}
+comments：{{comments}}
+摘要：{{abstract}}
+引言（可能为空）：{{introduction}}
+结论（可能为空）：{{conclusion}}
+</paper>
+
+请按以下结构输出 JSON：
+{
+  "arxiv_id": "{{arxiv_id}}",
+  "work_type": {"primary": "拓荒|修路|加盖|测绘|勘探|奠基|导览", "secondary": "同上，或 null"},
+  "problem": "要解决的具体问题，一句话",
+  "why_hard": "这个问题为什么难或为什么重要，一句话",
+  "pain_scenario": "这个问题在现实中的一个具体表现，一句话；材料中没有则 null",
+  "core_idea": "核心做法，1–2 句，写清机制",
+  "key_mechanism": "最关键的一个机制，一句话",
+  "key_results": [
+    {"claim": "结论", "number": "原文数字", "compared_to": "比较对象", "setting": "数据集或条件", "source": "abstract|introduction|conclusion"}
+  ],
+  "address_hint": {
+    "direction": "研究方向（对应州）",
+    "route": "具体问题或技术路线（对应城市），附已有方案的短板",
+    "contribution": "本文的具体做法（对应门牌）"
+  },
+  "neighbors": [{"name": "材料中提到的已有方法", "relation": "继承|改进|竞争|互补", "difference": "一句话"}],
+  "limitations": "作者承认的局限；没有则 null",
+  "signals": {
+    "code_available": "true|false|null（comments 或正文中有代码链接为 true）",
+    "venue": "会议或期刊；没有则 null",
+    "experiment_scale": "实验规模简述；没有则 null"
+  },
+  "confidence_notes": "哪些信息仅从摘要推断或不确定"
+}

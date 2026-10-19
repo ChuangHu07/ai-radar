@@ -1,0 +1,20 @@
+<papers>
+{{s1_results_json_array}}
+</papers>
+
+请按 system 中的任务输出如下结构的 JSON：
+{
+  "shared_address": {
+    "earth": {"name": "", "tension": ""},
+    "country": {"name": "", "tension": ""},
+    "state": null
+  },
+  "map_summary": "",
+  "clusters": [
+    {"cluster_id": "A", "name": "", "what_is_happening": "", "paper_ids": []}
+  ],
+  "highlights": [""],
+  "relations": [{"paper_ids": ["", ""], "type": "互补|对立|同题异解|递进", "note": ""}],
+  "ratings": [{"arxiv_id": "", "stars": 3, "reason": ""}],
+  "reading_order": null
+}

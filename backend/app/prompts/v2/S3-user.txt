@@ -1,0 +1,14 @@
+<abstract>
+{{abstract}}
+</abstract>
+<paper_facts>
+{{s1_result}}
+</paper_facts>
+<cluster_context>
+所在片区：{{cluster_name}}——{{cluster_what_is_happening}}
+同片区其他论文：{{sibling_one_liners}}
+与本文相关的关系：{{relations_involving_this_paper}}
+</cluster_context>
+<rating>{{stars}} 星：{{rating_reason}}</rating>
+
+请按 system 中的结构输出这张卡片。

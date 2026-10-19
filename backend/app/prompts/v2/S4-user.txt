@@ -1,0 +1,17 @@
+<cards>
+{{all_cards}}
+</cards>
+<paper_facts>
+{{all_s1_results}}
+</paper_facts>
+<rule_check_report>
+{{rule_check_report}}
+</rule_check_report>
+
+请审校以上卡片，输出 JSON：
+{
+  "results": [
+    {"arxiv_id": "", "pass": true,
+     "issues": [{"check": "C1", "location": "<result>", "problem": "", "fix": ""}]}
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "type": "object",
+  "properties": {
+    "overall_pass": {
+      "type": "boolean"
+    },
+    "scores": {
+      "type": "object",
+      "properties": {
+        "E1": {
+          "type": "integer"
+        },
+        "E2": {
+          "type": "integer"
+        },
+        "E3": {
+          "type": "integer"
+        },
+        "E4": {
+          "type": "integer"
+        },
+        "E5": {
+          "type": "integer"
+        },
+        "E6": {
+          "type": "integer"
+        },
+        "E7": {
+          "type": "integer"
+        },
+        "E8": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E7",
+        "E8"
+      ],
+      "additionalProperties": false
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "check": {
+            "type": "string"
+          },
+          "section": {
+            "type": "string"
+          },
+          "severity": {
+            "type": "string"
+          },
+          "problem": {
+            "type": "string"
+          },
+          "fix": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "check",
+          "section",
+          "severity",
+          "problem",
+          "fix"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "overall_pass",
+    "scores",
+    "issues"
+  ],
+  "additionalProperties": false
+}

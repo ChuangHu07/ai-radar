@@ -1,0 +1,47 @@
+<paper_meta>
+{{title}}｜{{arxiv_id}} {{version}}｜{{comments}}
+</paper_meta>
+<paper_sections>
+{{sections_with_ids}}
+</paper_sections>
+<equations>
+{{equations_table}}
+</equations>
+<figures_tables>
+{{captions_and_tables}}
+</figures_tables>
+<references>
+参考文献见上方 paper_sections 的完整原文，直接阅读末尾参考文献，不省略正文。
+</references>
+
+请基于以上材料，按 system 中的规则输出如下结构的 JSON：
+{
+  "one_line_by_authors": "作者自己如何概括本文，一句话，尽量贴近原文",
+  "problem": {"statement": "", "why_hard": "", "where": ""},
+  "prior_work": [
+    {"name": "", "ref_id": "", "how_it_works": "", "shortcoming_per_authors": "", "relation": "继承|改进|竞争|互补", "where": ""}
+  ],
+  "contributions": [{"text": "", "where": ""}],
+  "method": {
+    "overview": "按数据流顺序描述整体流程",
+    "components": [
+      {"name": "", "role": "", "input": "", "output": "", "key_design_choice": "关键设计选择及作者给出的理由", "where": "", "equations": ["Eq.3"]}
+    ]
+  },
+  "key_equations": [
+    {"eq_id": "Eq.3", "purpose": "这个公式计算什么", "symbols": [{"symbol": "", "meaning": "", "shape_or_range": "原文没有则 null"}], "importance": "core|supporting", "modifies": "若是对已知公式的修改，写出原公式名称，否则 null", "where": ""}
+  ],
+  "experiments": {
+    "datasets": [{"name": "", "what": "", "where": ""}],
+    "metrics": [{"name": "", "higher_is_better": true, "meaning": ""}],
+    "baselines": [{"name": "", "ref_id": ""}],
+    "main_results": [{"claim": "", "numbers": "", "where": ""}],
+    "ablations": [{"change": "去掉或替换了什么", "effect": "", "maps_to_component": "", "where": ""}],
+    "cost": "训练与推理成本、硬件；原文没有则 null"
+  },
+  "limitations_by_authors": [{"text": "", "where": ""}],
+  "concepts": [{"term": "", "en": "", "explained_in_paper": true, "first_used": ""}],
+  "figures": [{"id": "", "shows": "", "importance": "high|medium|low"}],
+  "resources": {"code": "仅限原文中出现的链接", "data": "", "project_page": ""},
+  "extraction_notes": ""
+}

@@ -1,0 +1,32 @@
+<intro_and_related_work>
+{{introduction_section}}
+{{related_work_section}}
+</intro_and_related_work>
+<references>
+参考文献见上方 intro_and_related_work 中保留的完整逐页原文末尾。
+</references>
+<fact_sheet>
+{{d1_json}}
+</fact_sheet>
+
+请完成 system 中的三个任务，输出如下结构的 JSON：
+{
+  "address": {
+    "earth": {"name": "", "tension": ""},
+    "country": {"name": "", "tension": ""},
+    "state": {"name": "", "tension": ""},
+    "city": {"name": "", "tension": "", "existing_routes": ""},
+    "street": {"name": "", "contribution": "", "headline_result": ""}
+  },
+  "neighbors": [{"name": "", "ref_id": "", "relation": "继承|改进|竞争|互补", "difference": ""}],
+  "vacancy": "",
+  "work_type": {"primary": "", "secondary": null},
+  "knowledge_map": [
+    {"id": "K1", "level": "L0|L1|L2|L3", "term": "", "en": "", "why_needed": "", "enough_standard": "", "self_check": {"q": "", "a": ""}, "quick_explain": "", "learn_from": [""], "depends_on": []}
+  ],
+  "routes": {
+    "beginner": {"prerequisites_in_order": [], "focus": [], "skip": [], "estimated_time": "", "paper_reading_order": ""},
+    "intermediate": {"prerequisites_in_order": [], "focus": [], "skip": [], "estimated_time": "", "paper_reading_order": ""},
+    "expert": {"prerequisites_in_order": [], "focus": [], "skip": [], "estimated_time": "", "paper_reading_order": ""}
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "version": "user-prompts-2026-10-07-v4",
+  "sources": {
+    "00_设计总览.md": "2c3696d8cc3fece7bfcf36372c7aa76b7e0e4c4a185aebd9be21c93a9b2f5c1a",
+    "01_共享写作规范.md": "2d3aa9c9597f579ef3f7c6ececcc5b4e0fac8915160bce249b83f7be4c615006",
+    "02_论文速览_Prompts.md": "2a90d8d4c42a50f56440981dc9ab05d5415bf2734c01a594640931ed1bfbf4aa",
+    "03_论文精读_Prompts.md": "fef2a3fcabcc2c7db8962e3f6e7286e07cda3c30173d392a29a883599dc257c0",
+    "04_生成验收政策.md": "ba17e66d35d1f546cacab9b96b6d95ea12e56489b9b6d72ea612fe671c216c11",
+    "05_研究定位表达.md": "e9f00f6c5c93dedf109189d5b2913c2ddd6ae283f8709ccd58b1841cff0d3f1a"
+  },
+  "shared_sha256": "d8c89032edb7a5b6e04a73576ca2c8f4670a8be2f6c2059a7da5d53febe77905"
+}

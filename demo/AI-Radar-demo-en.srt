@@ -1,0 +1,85 @@
+1
+00:00:00,000 --> 00:00:10,417
+AI Radar helps researchers and students discover recent papers and understand
+unfamiliar research. This walkthrough uses real, previously generated reports.
+
+2
+00:00:10,417 --> 00:00:20,208
+Start with an official arXiv category. A specific code, such as C S dot A I,
+searches the artificial intelligence subcategory.
+
+3
+00:00:20,208 --> 00:00:28,417
+Here is a saved overview of five papers. The opening summary explains the shared
+context before you explore each contribution.
+
+4
+00:00:28,417 --> 00:00:37,667
+Each paper combines a plain language explanation with a concrete illustration.
+This example explains how an agent can avoid tools that stop working.
+
+5
+00:00:37,667 --> 00:00:47,625
+Expand the card to inspect the problem, key idea, results, significance, and
+limitations. Experimental conditions stay attached to the reported result.
+
+6
+00:00:47,625 --> 00:00:56,833
+Source excerpts sit beside the explanation. You can inspect the quoted text and
+its physical PDF page reference instead of trusting a summary alone.
+
+7
+00:00:56,833 --> 00:01:05,500
+The top level deep reading button opens one compact list. Select one paper for a
+close reading, or several for joint analysis.
+
+8
+00:01:05,500 --> 00:01:12,208
+Here we select the RATED paper. The selection remains editable after entering the
+reading workspace.
+
+9
+00:01:12,208 --> 00:01:22,333
+The paper arrives with its full text ready. Users can add their own PDFs, replace
+a source, or remove a paper before explicitly generating a report.
+
+10
+00:01:22,333 --> 00:01:31,833
+Now we switch to a separate, previously generated English joint reading example.
+It compares two papers, totaling seventy five pages.
+
+11
+00:01:31,833 --> 00:01:40,250
+The joint report first identifies the shared research question. Each paper keeps
+its own title, source, and evidence references.
+
+12
+00:01:40,250 --> 00:01:49,208
+Next, compare how the researchers investigated their questions, including their
+interventions, monitoring methods, and evaluation strategies.
+
+13
+00:01:49,208 --> 00:01:58,167
+The results section keeps evidence attached to individual papers. Different task
+domains mean their accuracy numbers should not become a simple ranking.
+
+14
+00:01:58,167 --> 00:02:07,583
+Expanding a citation reveals the original excerpt, the paper it belongs to, and
+the PDF page. The source PDF is one click away.
+
+15
+00:02:07,583 --> 00:02:17,167
+The report also explains connections and limitations. Automated checks help trace
+the sources, but readers still need to verify scientific claims.
+
+16
+00:02:17,167 --> 00:02:24,792
+Finally, joint takeaways connect what can be learned across the papers, while
+keeping the limits of those connections visible.
+
+17
+00:02:24,792 --> 00:02:36,208
+Our biggest lesson was turning a vague idea into clear requirements, then breaking
+a large feature into smaller tasks. AI Radar connects discovery, understanding,
+and source checking.

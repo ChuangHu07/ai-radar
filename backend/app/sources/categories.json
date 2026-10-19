@@ -1,0 +1,2065 @@
+{
+  "source": "https://arxiv.org/category_taxonomy",
+  "verified_at": "2026-10-05",
+  "translation_note": "中文别名为人工辅助索引；尚无译名的类别显示官方英文名称。",
+  "categories": [
+    {
+      "code": "cs",
+      "official_name": "Computer Science",
+      "zh_name": "计算机科学",
+      "group": "Computer Science",
+      "aliases": [
+        "计算机科学"
+      ],
+      "kind": "archive",
+      "members": [
+        "cs.AI",
+        "cs.AR",
+        "cs.CC",
+        "cs.CE",
+        "cs.CG",
+        "cs.CL",
+        "cs.CR",
+        "cs.CV",
+        "cs.CY",
+        "cs.DB",
+        "cs.DC",
+        "cs.DL",
+        "cs.DM",
+        "cs.DS",
+        "cs.ET",
+        "cs.FL",
+        "cs.GL",
+        "cs.GR",
+        "cs.GT",
+        "cs.HC",
+        "cs.IR",
+        "cs.IT",
+        "cs.LG",
+        "cs.LO",
+        "cs.MA",
+        "cs.MM",
+        "cs.MS",
+        "cs.NA",
+        "cs.NE",
+        "cs.NI",
+        "cs.OH",
+        "cs.OS",
+        "cs.PF",
+        "cs.PL",
+        "cs.RO",
+        "cs.SC",
+        "cs.SD",
+        "cs.SE",
+        "cs.SI",
+        "cs.SY"
+      ]
+    },
+    {
+      "code": "econ",
+      "official_name": "Economics",
+      "zh_name": "经济学",
+      "group": "Economics",
+      "aliases": [
+        "经济学"
+      ],
+      "kind": "archive",
+      "members": [
+        "econ.EM",
+        "econ.GN",
+        "econ.TH"
+      ]
+    },
+    {
+      "code": "eess",
+      "official_name": "Electrical Engineering and Systems Science",
+      "zh_name": "电子工程与系统科学",
+      "group": "Electrical Engineering and Systems Science",
+      "aliases": [
+        "电子工程与系统科学"
+      ],
+      "kind": "archive",
+      "members": [
+        "eess.AS",
+        "eess.IV",
+        "eess.SP",
+        "eess.SY"
+      ]
+    },
+    {
+      "code": "math",
+      "official_name": "Mathematics",
+      "zh_name": "数学",
+      "group": "Mathematics",
+      "aliases": [
+        "数学"
+      ],
+      "kind": "archive",
+      "members": [
+        "math.AC",
+        "math.AG",
+        "math.AP",
+        "math.AT",
+        "math.CA",
+        "math.CO",
+        "math.CT",
+        "math.CV",
+        "math.DG",
+        "math.DS",
+        "math.FA",
+        "math.GM",
+        "math.GN",
+        "math.GR",
+        "math.GT",
+        "math.HO",
+        "math.IT",
+        "math.KT",
+        "math.LO",
+        "math.MG",
+        "math.MP",
+        "math.NA",
+        "math.NT",
+        "math.OA",
+        "math.OC",
+        "math.PR",
+        "math.QA",
+        "math.RA",
+        "math.RT",
+        "math.SG",
+        "math.SP",
+        "math.ST"
+      ]
+    },
+    {
+      "code": "q-bio",
+      "official_name": "Quantitative Biology",
+      "zh_name": "定量生物学",
+      "group": "Quantitative Biology",
+      "aliases": [
+        "定量生物学"
+      ],
+      "kind": "archive",
+      "members": [
+        "q-bio.BM",
+        "q-bio.CB",
+        "q-bio.GN",
+        "q-bio.MN",
+        "q-bio.NC",
+        "q-bio.OT",
+        "q-bio.PE",
+        "q-bio.QM",
+        "q-bio.SC",
+        "q-bio.TO"
+      ]
+    },
+    {
+      "code": "q-fin",
+      "official_name": "Quantitative Finance",
+      "zh_name": "定量金融",
+      "group": "Quantitative Finance",
+      "aliases": [
+        "定量金融"
+      ],
+      "kind": "archive",
+      "members": [
+        "q-fin.CP",
+        "q-fin.EC",
+        "q-fin.GN",
+        "q-fin.MF",
+        "q-fin.PM",
+        "q-fin.PR",
+        "q-fin.RM",
+        "q-fin.ST",
+        "q-fin.TR"
+      ]
+    },
+    {
+      "code": "stat",
+      "official_name": "Statistics",
+      "zh_name": "统计学",
+      "group": "Statistics",
+      "aliases": [
+        "统计学"
+      ],
+      "kind": "archive",
+      "members": [
+        "stat.AP",
+        "stat.CO",
+        "stat.ME",
+        "stat.ML",
+        "stat.OT",
+        "stat.TH"
+      ]
+    },
+    {
+      "code": "astro-ph",
+      "official_name": "Astrophysics",
+      "zh_name": "天体物理",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "archive",
+      "members": [
+        "astro-ph.CO",
+        "astro-ph.EP",
+        "astro-ph.GA",
+        "astro-ph.HE",
+        "astro-ph.IM",
+        "astro-ph.SR"
+      ]
+    },
+    {
+      "code": "cond-mat",
+      "official_name": "Condensed Matter",
+      "zh_name": "凝聚态物理",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "archive",
+      "members": [
+        "cond-mat.dis-nn",
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci",
+        "cond-mat.other",
+        "cond-mat.quant-gas",
+        "cond-mat.soft",
+        "cond-mat.stat-mech",
+        "cond-mat.str-el",
+        "cond-mat.supr-con"
+      ]
+    },
+    {
+      "code": "nlin",
+      "official_name": "Nonlinear Sciences",
+      "zh_name": "非线性科学",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "archive",
+      "members": [
+        "nlin.AO",
+        "nlin.CD",
+        "nlin.CG",
+        "nlin.PS",
+        "nlin.SI"
+      ]
+    },
+    {
+      "code": "physics",
+      "official_name": "Physics",
+      "zh_name": "普通物理",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "archive",
+      "members": [
+        "physics.acc-ph",
+        "physics.ao-ph",
+        "physics.app-ph",
+        "physics.atm-clus",
+        "physics.atom-ph",
+        "physics.bio-ph",
+        "physics.chem-ph",
+        "physics.class-ph",
+        "physics.comp-ph",
+        "physics.data-an",
+        "physics.ed-ph",
+        "physics.flu-dyn",
+        "physics.gen-ph",
+        "physics.geo-ph",
+        "physics.hist-ph",
+        "physics.ins-det",
+        "physics.med-ph",
+        "physics.optics",
+        "physics.plasm-ph",
+        "physics.pop-ph",
+        "physics.soc-ph",
+        "physics.space-ph"
+      ]
+    },
+    {
+      "code": "cs.AI",
+      "official_name": "Artificial Intelligence",
+      "zh_name": "人工智能",
+      "group": "Computer Science",
+      "aliases": [
+        "AI",
+        "人工智能"
+      ],
+      "kind": "category",
+      "members": [
+        "cs.AI"
+      ]
+    },
+    {
+      "code": "cs.AR",
+      "official_name": "Hardware Architecture",
+      "zh_name": "Hardware Architecture",
+      "group": "Computer Science",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "cs.AR"
+      ]
+    },
+    {
+      "code": "cs.CC",
+      "official_name": "Computational Complexity",
+      "zh_name": "Computational Complexity",
+      "group": "Computer Science",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "cs.CC"
+      ]
+    },
+    {
+      "code": "cs.CE",
+      "official_name": "Computational Engineering, Finance, and Science",
+      "zh_name": "Computational Engineering, Finance, and Science",
+      "group": "Computer Science",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "cs.CE"
+      ]
+    },
+    {
+      "code": "cs.CG",
+      "official_name": "Computational Geometry",
+      "zh_name": "Computational Geometry",
+      "group": "Computer Science",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "cs.CG"
+      ]
+    },
+    {
+      "code": "cs.CL",
+      "official_name": "Computation and Language",
+      "zh_name": "计算与语言",
+      "group": "Computer Science",
+      "aliases": [
+        "自然语言处理",
+        "NLP",
+        "语言模型",
+        "大语言模型",
+        "LLM"
+      ],
+      "kind": "category",
+      "members": [
+        "cs.CL"
+      ]
+    },
+    {
+      "code": "cs.CR",
+      "official_name": "Cryptography and Security",
+      "zh_name": "密码学与安全",
+      "group": "Computer Science",
+      "aliases": [
+        "安全",
+        "密码学"
+      ],
+      "kind": "category",
+      "members": [
+        "cs.CR"
+      ]
+    },
+    {
+      "code": "cs.CV",
+      "official_name": "Computer Vision and Pattern Recognition",
+      "zh_name": "计算机视觉与模式识别",
+      "group": "Computer Science",
+      "aliases": [
+        "计算机视觉",
+        "视觉",
+        "CV"
+      ],
+      "kind": "category",
+      "members": [
+        "cs.CV"
+      ]
+    },
+    {
+      "code": "cs.CY",
+      "official_name": "Computers and Society",
+      "zh_name": "Computers and Society",
+      "group": "Computer Science",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "cs.CY"
+      ]
+    },
+    {
+      "code": "cs.DB",
+      "official_name": "Databases",
+      "zh_name": "数据库",
+      "group": "Computer Science",
+      "aliases": [
+        "数据库",
+        "SQL"
+      ],
+      "kind": "category",
+      "members": [
+        "cs.DB"
+      ]
+    },
+    {
+      "code": "cs.DC",
+      "official_name": "Distributed, Parallel, and Cluster Computing",
+      "zh_name": "分布式与并行计算",
+      "group": "Computer Science",
+      "aliases": [
+        "分布式",
+        "并行计算"
+      ],
+      "kind": "category",
+      "members": [
+        "cs.DC"
+      ]
+    },
+    {
+      "code": "cs.DL",
+      "official_name": "Digital Libraries",
+      "zh_name": "Digital Libraries",
+      "group": "Computer Science",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "cs.DL"
+      ]
+    },
+    {
+      "code": "cs.DM",
+      "official_name": "Discrete Mathematics",
+      "zh_name": "Discrete Mathematics",
+      "group": "Computer Science",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "cs.DM"
+      ]
+    },
+    {
+      "code": "cs.DS",
+      "official_name": "Data Structures and Algorithms",
+      "zh_name": "数据结构与算法",
+      "group": "Computer Science",
+      "aliases": [
+        "算法",
+        "数据结构"
+      ],
+      "kind": "category",
+      "members": [
+        "cs.DS"
+      ]
+    },
+    {
+      "code": "cs.ET",
+      "official_name": "Emerging Technologies",
+      "zh_name": "Emerging Technologies",
+      "group": "Computer Science",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "cs.ET"
+      ]
+    },
+    {
+      "code": "cs.FL",
+      "official_name": "Formal Languages and Automata Theory",
+      "zh_name": "Formal Languages and Automata Theory",
+      "group": "Computer Science",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "cs.FL"
+      ]
+    },
+    {
+      "code": "cs.GL",
+      "official_name": "General Literature",
+      "zh_name": "General Literature",
+      "group": "Computer Science",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "cs.GL"
+      ]
+    },
+    {
+      "code": "cs.GR",
+      "official_name": "Graphics",
+      "zh_name": "Graphics",
+      "group": "Computer Science",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "cs.GR"
+      ]
+    },
+    {
+      "code": "cs.GT",
+      "official_name": "Computer Science and Game Theory",
+      "zh_name": "Computer Science and Game Theory",
+      "group": "Computer Science",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "cs.GT"
+      ]
+    },
+    {
+      "code": "cs.HC",
+      "official_name": "Human-Computer Interaction",
+      "zh_name": "人机交互",
+      "group": "Computer Science",
+      "aliases": [
+        "人机交互",
+        "HCI"
+      ],
+      "kind": "category",
+      "members": [
+        "cs.HC"
+      ]
+    },
+    {
+      "code": "cs.IR",
+      "official_name": "Information Retrieval",
+      "zh_name": "信息检索",
+      "group": "Computer Science",
+      "aliases": [
+        "信息检索",
+        "检索",
+        "RAG"
+      ],
+      "kind": "category",
+      "members": [
+        "cs.IR"
+      ]
+    },
+    {
+      "code": "cs.IT",
+      "official_name": "Information Theory",
+      "zh_name": "信息论",
+      "group": "Computer Science",
+      "aliases": [
+        "信息论"
+      ],
+      "kind": "category",
+      "members": [
+        "cs.IT"
+      ]
+    },
+    {
+      "code": "cs.LG",
+      "official_name": "Machine Learning",
+      "zh_name": "机器学习",
+      "group": "Computer Science",
+      "aliases": [
+        "机器学习",
+        "ML"
+      ],
+      "kind": "category",
+      "members": [
+        "cs.LG"
+      ]
+    },
+    {
+      "code": "cs.LO",
+      "official_name": "Logic in Computer Science",
+      "zh_name": "Logic in Computer Science",
+      "group": "Computer Science",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "cs.LO"
+      ]
+    },
+    {
+      "code": "cs.MA",
+      "official_name": "Multiagent Systems",
+      "zh_name": "多智能体系统",
+      "group": "Computer Science",
+      "aliases": [
+        "多智能体",
+        "Agent",
+        "智能体"
+      ],
+      "kind": "category",
+      "members": [
+        "cs.MA"
+      ]
+    },
+    {
+      "code": "cs.MM",
+      "official_name": "Multimedia",
+      "zh_name": "Multimedia",
+      "group": "Computer Science",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "cs.MM"
+      ]
+    },
+    {
+      "code": "cs.MS",
+      "official_name": "Mathematical Software",
+      "zh_name": "Mathematical Software",
+      "group": "Computer Science",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "cs.MS"
+      ]
+    },
+    {
+      "code": "cs.NA",
+      "official_name": "Numerical Analysis",
+      "zh_name": "Numerical Analysis",
+      "group": "Computer Science",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "cs.NA"
+      ]
+    },
+    {
+      "code": "cs.NE",
+      "official_name": "Neural and Evolutionary Computing",
+      "zh_name": "神经与进化计算",
+      "group": "Computer Science",
+      "aliases": [
+        "神经网络",
+        "进化计算"
+      ],
+      "kind": "category",
+      "members": [
+        "cs.NE"
+      ]
+    },
+    {
+      "code": "cs.NI",
+      "official_name": "Networking and Internet Architecture",
+      "zh_name": "Networking and Internet Architecture",
+      "group": "Computer Science",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "cs.NI"
+      ]
+    },
+    {
+      "code": "cs.OH",
+      "official_name": "Other Computer Science",
+      "zh_name": "Other Computer Science",
+      "group": "Computer Science",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "cs.OH"
+      ]
+    },
+    {
+      "code": "cs.OS",
+      "official_name": "Operating Systems",
+      "zh_name": "操作系统",
+      "group": "Computer Science",
+      "aliases": [
+        "操作系统"
+      ],
+      "kind": "category",
+      "members": [
+        "cs.OS"
+      ]
+    },
+    {
+      "code": "cs.PF",
+      "official_name": "Performance",
+      "zh_name": "Performance",
+      "group": "Computer Science",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "cs.PF"
+      ]
+    },
+    {
+      "code": "cs.PL",
+      "official_name": "Programming Languages",
+      "zh_name": "编程语言",
+      "group": "Computer Science",
+      "aliases": [
+        "编程语言"
+      ],
+      "kind": "category",
+      "members": [
+        "cs.PL"
+      ]
+    },
+    {
+      "code": "cs.RO",
+      "official_name": "Robotics",
+      "zh_name": "机器人学",
+      "group": "Computer Science",
+      "aliases": [
+        "机器人",
+        "Robotics"
+      ],
+      "kind": "category",
+      "members": [
+        "cs.RO"
+      ]
+    },
+    {
+      "code": "cs.SC",
+      "official_name": "Symbolic Computation",
+      "zh_name": "Symbolic Computation",
+      "group": "Computer Science",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "cs.SC"
+      ]
+    },
+    {
+      "code": "cs.SD",
+      "official_name": "Sound",
+      "zh_name": "声音",
+      "group": "Computer Science",
+      "aliases": [
+        "声音",
+        "音频"
+      ],
+      "kind": "category",
+      "members": [
+        "cs.SD"
+      ]
+    },
+    {
+      "code": "cs.SE",
+      "official_name": "Software Engineering",
+      "zh_name": "软件工程",
+      "group": "Computer Science",
+      "aliases": [
+        "软件工程"
+      ],
+      "kind": "category",
+      "members": [
+        "cs.SE"
+      ]
+    },
+    {
+      "code": "cs.SI",
+      "official_name": "Social and Information Networks",
+      "zh_name": "Social and Information Networks",
+      "group": "Computer Science",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "cs.SI"
+      ]
+    },
+    {
+      "code": "cs.SY",
+      "official_name": "Systems and Control",
+      "zh_name": "Systems and Control",
+      "group": "Computer Science",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "cs.SY"
+      ]
+    },
+    {
+      "code": "econ.EM",
+      "official_name": "Econometrics",
+      "zh_name": "Econometrics",
+      "group": "Economics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "econ.EM"
+      ]
+    },
+    {
+      "code": "econ.GN",
+      "official_name": "General Economics",
+      "zh_name": "General Economics",
+      "group": "Economics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "econ.GN"
+      ]
+    },
+    {
+      "code": "econ.TH",
+      "official_name": "Theoretical Economics",
+      "zh_name": "Theoretical Economics",
+      "group": "Economics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "econ.TH"
+      ]
+    },
+    {
+      "code": "eess.AS",
+      "official_name": "Audio and Speech Processing",
+      "zh_name": "音频与语音处理",
+      "group": "Electrical Engineering and Systems Science",
+      "aliases": [
+        "语音",
+        "音频"
+      ],
+      "kind": "category",
+      "members": [
+        "eess.AS"
+      ]
+    },
+    {
+      "code": "eess.IV",
+      "official_name": "Image and Video Processing",
+      "zh_name": "图像与视频处理",
+      "group": "Electrical Engineering and Systems Science",
+      "aliases": [
+        "图像处理",
+        "医学成像"
+      ],
+      "kind": "category",
+      "members": [
+        "eess.IV"
+      ]
+    },
+    {
+      "code": "eess.SP",
+      "official_name": "Signal Processing",
+      "zh_name": "信号处理",
+      "group": "Electrical Engineering and Systems Science",
+      "aliases": [
+        "信号处理",
+        "超声"
+      ],
+      "kind": "category",
+      "members": [
+        "eess.SP"
+      ]
+    },
+    {
+      "code": "eess.SY",
+      "official_name": "Systems and Control",
+      "zh_name": "Systems and Control",
+      "group": "Electrical Engineering and Systems Science",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "eess.SY"
+      ]
+    },
+    {
+      "code": "math.AC",
+      "official_name": "Commutative Algebra",
+      "zh_name": "Commutative Algebra",
+      "group": "Mathematics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "math.AC"
+      ]
+    },
+    {
+      "code": "math.AG",
+      "official_name": "Algebraic Geometry",
+      "zh_name": "Algebraic Geometry",
+      "group": "Mathematics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "math.AG"
+      ]
+    },
+    {
+      "code": "math.AP",
+      "official_name": "Analysis of PDEs",
+      "zh_name": "Analysis of PDEs",
+      "group": "Mathematics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "math.AP"
+      ]
+    },
+    {
+      "code": "math.AT",
+      "official_name": "Algebraic Topology",
+      "zh_name": "Algebraic Topology",
+      "group": "Mathematics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "math.AT"
+      ]
+    },
+    {
+      "code": "math.CA",
+      "official_name": "Classical Analysis and ODEs",
+      "zh_name": "Classical Analysis and ODEs",
+      "group": "Mathematics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "math.CA"
+      ]
+    },
+    {
+      "code": "math.CO",
+      "official_name": "Combinatorics",
+      "zh_name": "Combinatorics",
+      "group": "Mathematics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "math.CO"
+      ]
+    },
+    {
+      "code": "math.CT",
+      "official_name": "Category Theory",
+      "zh_name": "Category Theory",
+      "group": "Mathematics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "math.CT"
+      ]
+    },
+    {
+      "code": "math.CV",
+      "official_name": "Complex Variables",
+      "zh_name": "Complex Variables",
+      "group": "Mathematics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "math.CV"
+      ]
+    },
+    {
+      "code": "math.DG",
+      "official_name": "Differential Geometry",
+      "zh_name": "Differential Geometry",
+      "group": "Mathematics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "math.DG"
+      ]
+    },
+    {
+      "code": "math.DS",
+      "official_name": "Dynamical Systems",
+      "zh_name": "Dynamical Systems",
+      "group": "Mathematics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "math.DS"
+      ]
+    },
+    {
+      "code": "math.FA",
+      "official_name": "Functional Analysis",
+      "zh_name": "Functional Analysis",
+      "group": "Mathematics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "math.FA"
+      ]
+    },
+    {
+      "code": "math.GM",
+      "official_name": "General Mathematics",
+      "zh_name": "General Mathematics",
+      "group": "Mathematics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "math.GM"
+      ]
+    },
+    {
+      "code": "math.GN",
+      "official_name": "General Topology",
+      "zh_name": "General Topology",
+      "group": "Mathematics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "math.GN"
+      ]
+    },
+    {
+      "code": "math.GR",
+      "official_name": "Group Theory",
+      "zh_name": "Group Theory",
+      "group": "Mathematics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "math.GR"
+      ]
+    },
+    {
+      "code": "math.GT",
+      "official_name": "Geometric Topology",
+      "zh_name": "Geometric Topology",
+      "group": "Mathematics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "math.GT"
+      ]
+    },
+    {
+      "code": "math.HO",
+      "official_name": "History and Overview",
+      "zh_name": "History and Overview",
+      "group": "Mathematics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "math.HO"
+      ]
+    },
+    {
+      "code": "math.IT",
+      "official_name": "Information Theory",
+      "zh_name": "信息论",
+      "group": "Mathematics",
+      "aliases": [
+        "信息论"
+      ],
+      "kind": "category",
+      "members": [
+        "math.IT"
+      ]
+    },
+    {
+      "code": "math.KT",
+      "official_name": "K-Theory and Homology",
+      "zh_name": "K-Theory and Homology",
+      "group": "Mathematics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "math.KT"
+      ]
+    },
+    {
+      "code": "math.LO",
+      "official_name": "Logic",
+      "zh_name": "Logic",
+      "group": "Mathematics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "math.LO"
+      ]
+    },
+    {
+      "code": "math.MG",
+      "official_name": "Metric Geometry",
+      "zh_name": "Metric Geometry",
+      "group": "Mathematics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "math.MG"
+      ]
+    },
+    {
+      "code": "math.MP",
+      "official_name": "Mathematical Physics",
+      "zh_name": "Mathematical Physics",
+      "group": "Mathematics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "math.MP"
+      ]
+    },
+    {
+      "code": "math.NA",
+      "official_name": "Numerical Analysis",
+      "zh_name": "Numerical Analysis",
+      "group": "Mathematics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "math.NA"
+      ]
+    },
+    {
+      "code": "math.NT",
+      "official_name": "Number Theory",
+      "zh_name": "Number Theory",
+      "group": "Mathematics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "math.NT"
+      ]
+    },
+    {
+      "code": "math.OA",
+      "official_name": "Operator Algebras",
+      "zh_name": "Operator Algebras",
+      "group": "Mathematics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "math.OA"
+      ]
+    },
+    {
+      "code": "math.OC",
+      "official_name": "Optimization and Control",
+      "zh_name": "Optimization and Control",
+      "group": "Mathematics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "math.OC"
+      ]
+    },
+    {
+      "code": "math.PR",
+      "official_name": "Probability",
+      "zh_name": "概率论",
+      "group": "Mathematics",
+      "aliases": [
+        "概率"
+      ],
+      "kind": "category",
+      "members": [
+        "math.PR"
+      ]
+    },
+    {
+      "code": "math.QA",
+      "official_name": "Quantum Algebra",
+      "zh_name": "Quantum Algebra",
+      "group": "Mathematics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "math.QA"
+      ]
+    },
+    {
+      "code": "math.RA",
+      "official_name": "Rings and Algebras",
+      "zh_name": "Rings and Algebras",
+      "group": "Mathematics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "math.RA"
+      ]
+    },
+    {
+      "code": "math.RT",
+      "official_name": "Representation Theory",
+      "zh_name": "Representation Theory",
+      "group": "Mathematics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "math.RT"
+      ]
+    },
+    {
+      "code": "math.SG",
+      "official_name": "Symplectic Geometry",
+      "zh_name": "Symplectic Geometry",
+      "group": "Mathematics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "math.SG"
+      ]
+    },
+    {
+      "code": "math.SP",
+      "official_name": "Spectral Theory",
+      "zh_name": "Spectral Theory",
+      "group": "Mathematics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "math.SP"
+      ]
+    },
+    {
+      "code": "math.ST",
+      "official_name": "Statistics Theory",
+      "zh_name": "统计理论",
+      "group": "Mathematics",
+      "aliases": [
+        "统计理论"
+      ],
+      "kind": "category",
+      "members": [
+        "math.ST"
+      ]
+    },
+    {
+      "code": "astro-ph.CO",
+      "official_name": "Cosmology and Nongalactic Astrophysics",
+      "zh_name": "Cosmology and Nongalactic Astrophysics",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "astro-ph.CO"
+      ]
+    },
+    {
+      "code": "astro-ph.EP",
+      "official_name": "Earth and Planetary Astrophysics",
+      "zh_name": "Earth and Planetary Astrophysics",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "astro-ph.EP"
+      ]
+    },
+    {
+      "code": "astro-ph.GA",
+      "official_name": "Astrophysics of Galaxies",
+      "zh_name": "Astrophysics of Galaxies",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "astro-ph.GA"
+      ]
+    },
+    {
+      "code": "astro-ph.HE",
+      "official_name": "High Energy Astrophysical Phenomena",
+      "zh_name": "High Energy Astrophysical Phenomena",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "astro-ph.HE"
+      ]
+    },
+    {
+      "code": "astro-ph.IM",
+      "official_name": "Instrumentation and Methods for Astrophysics",
+      "zh_name": "Instrumentation and Methods for Astrophysics",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "astro-ph.IM"
+      ]
+    },
+    {
+      "code": "astro-ph.SR",
+      "official_name": "Solar and Stellar Astrophysics",
+      "zh_name": "Solar and Stellar Astrophysics",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "astro-ph.SR"
+      ]
+    },
+    {
+      "code": "cond-mat.dis-nn",
+      "official_name": "Disordered Systems and Neural Networks",
+      "zh_name": "Disordered Systems and Neural Networks",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "cond-mat.dis-nn"
+      ]
+    },
+    {
+      "code": "cond-mat.mes-hall",
+      "official_name": "Mesoscale and Nanoscale Physics",
+      "zh_name": "Mesoscale and Nanoscale Physics",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "cond-mat.mes-hall"
+      ]
+    },
+    {
+      "code": "cond-mat.mtrl-sci",
+      "official_name": "Materials Science",
+      "zh_name": "Materials Science",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "cond-mat.mtrl-sci"
+      ]
+    },
+    {
+      "code": "cond-mat.other",
+      "official_name": "Other Condensed Matter",
+      "zh_name": "Other Condensed Matter",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "cond-mat.other"
+      ]
+    },
+    {
+      "code": "cond-mat.quant-gas",
+      "official_name": "Quantum Gases",
+      "zh_name": "Quantum Gases",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "cond-mat.quant-gas"
+      ]
+    },
+    {
+      "code": "cond-mat.soft",
+      "official_name": "Soft Condensed Matter",
+      "zh_name": "Soft Condensed Matter",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "cond-mat.soft"
+      ]
+    },
+    {
+      "code": "cond-mat.stat-mech",
+      "official_name": "Statistical Mechanics",
+      "zh_name": "Statistical Mechanics",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "cond-mat.stat-mech"
+      ]
+    },
+    {
+      "code": "cond-mat.str-el",
+      "official_name": "Strongly Correlated Electrons",
+      "zh_name": "Strongly Correlated Electrons",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "cond-mat.str-el"
+      ]
+    },
+    {
+      "code": "cond-mat.supr-con",
+      "official_name": "Superconductivity",
+      "zh_name": "Superconductivity",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "cond-mat.supr-con"
+      ]
+    },
+    {
+      "code": "gr-qc",
+      "official_name": "General Relativity and Quantum Cosmology",
+      "zh_name": "General Relativity and Quantum Cosmology",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "gr-qc"
+      ]
+    },
+    {
+      "code": "hep-ex",
+      "official_name": "High Energy Physics - Experiment",
+      "zh_name": "High Energy Physics - Experiment",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "hep-ex"
+      ]
+    },
+    {
+      "code": "hep-lat",
+      "official_name": "High Energy Physics - Lattice",
+      "zh_name": "High Energy Physics - Lattice",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "hep-lat"
+      ]
+    },
+    {
+      "code": "hep-ph",
+      "official_name": "High Energy Physics - Phenomenology",
+      "zh_name": "High Energy Physics - Phenomenology",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "hep-ph"
+      ]
+    },
+    {
+      "code": "hep-th",
+      "official_name": "High Energy Physics - Theory",
+      "zh_name": "High Energy Physics - Theory",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "hep-th"
+      ]
+    },
+    {
+      "code": "math-ph",
+      "official_name": "Mathematical Physics",
+      "zh_name": "Mathematical Physics",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "math-ph"
+      ]
+    },
+    {
+      "code": "nlin.AO",
+      "official_name": "Adaptation and Self-Organizing Systems",
+      "zh_name": "Adaptation and Self-Organizing Systems",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "nlin.AO"
+      ]
+    },
+    {
+      "code": "nlin.CD",
+      "official_name": "Chaotic Dynamics",
+      "zh_name": "Chaotic Dynamics",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "nlin.CD"
+      ]
+    },
+    {
+      "code": "nlin.CG",
+      "official_name": "Cellular Automata and Lattice Gases",
+      "zh_name": "Cellular Automata and Lattice Gases",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "nlin.CG"
+      ]
+    },
+    {
+      "code": "nlin.PS",
+      "official_name": "Pattern Formation and Solitons",
+      "zh_name": "Pattern Formation and Solitons",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "nlin.PS"
+      ]
+    },
+    {
+      "code": "nlin.SI",
+      "official_name": "Exactly Solvable and Integrable Systems",
+      "zh_name": "Exactly Solvable and Integrable Systems",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "nlin.SI"
+      ]
+    },
+    {
+      "code": "nucl-ex",
+      "official_name": "Nuclear Experiment",
+      "zh_name": "Nuclear Experiment",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "nucl-ex"
+      ]
+    },
+    {
+      "code": "nucl-th",
+      "official_name": "Nuclear Theory",
+      "zh_name": "Nuclear Theory",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "nucl-th"
+      ]
+    },
+    {
+      "code": "physics.acc-ph",
+      "official_name": "Accelerator Physics",
+      "zh_name": "Accelerator Physics",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "physics.acc-ph"
+      ]
+    },
+    {
+      "code": "physics.ao-ph",
+      "official_name": "Atmospheric and Oceanic Physics",
+      "zh_name": "Atmospheric and Oceanic Physics",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "physics.ao-ph"
+      ]
+    },
+    {
+      "code": "physics.app-ph",
+      "official_name": "Applied Physics",
+      "zh_name": "Applied Physics",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "physics.app-ph"
+      ]
+    },
+    {
+      "code": "physics.atm-clus",
+      "official_name": "Atomic and Molecular Clusters",
+      "zh_name": "Atomic and Molecular Clusters",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "physics.atm-clus"
+      ]
+    },
+    {
+      "code": "physics.atom-ph",
+      "official_name": "Atomic Physics",
+      "zh_name": "Atomic Physics",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "physics.atom-ph"
+      ]
+    },
+    {
+      "code": "physics.bio-ph",
+      "official_name": "Biological Physics",
+      "zh_name": "Biological Physics",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "physics.bio-ph"
+      ]
+    },
+    {
+      "code": "physics.chem-ph",
+      "official_name": "Chemical Physics",
+      "zh_name": "Chemical Physics",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "physics.chem-ph"
+      ]
+    },
+    {
+      "code": "physics.class-ph",
+      "official_name": "Classical Physics",
+      "zh_name": "Classical Physics",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "physics.class-ph"
+      ]
+    },
+    {
+      "code": "physics.comp-ph",
+      "official_name": "Computational Physics",
+      "zh_name": "Computational Physics",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "physics.comp-ph"
+      ]
+    },
+    {
+      "code": "physics.data-an",
+      "official_name": "Data Analysis, Statistics and Probability",
+      "zh_name": "Data Analysis, Statistics and Probability",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "physics.data-an"
+      ]
+    },
+    {
+      "code": "physics.ed-ph",
+      "official_name": "Physics Education",
+      "zh_name": "Physics Education",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "physics.ed-ph"
+      ]
+    },
+    {
+      "code": "physics.flu-dyn",
+      "official_name": "Fluid Dynamics",
+      "zh_name": "Fluid Dynamics",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "physics.flu-dyn"
+      ]
+    },
+    {
+      "code": "physics.gen-ph",
+      "official_name": "General Physics",
+      "zh_name": "General Physics",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "physics.gen-ph"
+      ]
+    },
+    {
+      "code": "physics.geo-ph",
+      "official_name": "Geophysics",
+      "zh_name": "Geophysics",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "physics.geo-ph"
+      ]
+    },
+    {
+      "code": "physics.hist-ph",
+      "official_name": "History and Philosophy of Physics",
+      "zh_name": "History and Philosophy of Physics",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "physics.hist-ph"
+      ]
+    },
+    {
+      "code": "physics.ins-det",
+      "official_name": "Instrumentation and Detectors",
+      "zh_name": "Instrumentation and Detectors",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "physics.ins-det"
+      ]
+    },
+    {
+      "code": "physics.med-ph",
+      "official_name": "Medical Physics",
+      "zh_name": "医学物理",
+      "group": "Physics",
+      "aliases": [
+        "医学物理",
+        "超声",
+        "医学成像"
+      ],
+      "kind": "category",
+      "members": [
+        "physics.med-ph"
+      ]
+    },
+    {
+      "code": "physics.optics",
+      "official_name": "Optics",
+      "zh_name": "Optics",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "physics.optics"
+      ]
+    },
+    {
+      "code": "physics.plasm-ph",
+      "official_name": "Plasma Physics",
+      "zh_name": "Plasma Physics",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "physics.plasm-ph"
+      ]
+    },
+    {
+      "code": "physics.pop-ph",
+      "official_name": "Popular Physics",
+      "zh_name": "Popular Physics",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "physics.pop-ph"
+      ]
+    },
+    {
+      "code": "physics.soc-ph",
+      "official_name": "Physics and Society",
+      "zh_name": "Physics and Society",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "physics.soc-ph"
+      ]
+    },
+    {
+      "code": "physics.space-ph",
+      "official_name": "Space Physics",
+      "zh_name": "Space Physics",
+      "group": "Physics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "physics.space-ph"
+      ]
+    },
+    {
+      "code": "quant-ph",
+      "official_name": "Quantum Physics",
+      "zh_name": "量子物理",
+      "group": "Physics",
+      "aliases": [
+        "量子",
+        "量子计算"
+      ],
+      "kind": "category",
+      "members": [
+        "quant-ph"
+      ]
+    },
+    {
+      "code": "q-bio.BM",
+      "official_name": "Biomolecules",
+      "zh_name": "Biomolecules",
+      "group": "Quantitative Biology",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "q-bio.BM"
+      ]
+    },
+    {
+      "code": "q-bio.CB",
+      "official_name": "Cell Behavior",
+      "zh_name": "Cell Behavior",
+      "group": "Quantitative Biology",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "q-bio.CB"
+      ]
+    },
+    {
+      "code": "q-bio.GN",
+      "official_name": "Genomics",
+      "zh_name": "Genomics",
+      "group": "Quantitative Biology",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "q-bio.GN"
+      ]
+    },
+    {
+      "code": "q-bio.MN",
+      "official_name": "Molecular Networks",
+      "zh_name": "Molecular Networks",
+      "group": "Quantitative Biology",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "q-bio.MN"
+      ]
+    },
+    {
+      "code": "q-bio.NC",
+      "official_name": "Neurons and Cognition",
+      "zh_name": "Neurons and Cognition",
+      "group": "Quantitative Biology",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "q-bio.NC"
+      ]
+    },
+    {
+      "code": "q-bio.OT",
+      "official_name": "Other Quantitative Biology",
+      "zh_name": "Other Quantitative Biology",
+      "group": "Quantitative Biology",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "q-bio.OT"
+      ]
+    },
+    {
+      "code": "q-bio.PE",
+      "official_name": "Populations and Evolution",
+      "zh_name": "Populations and Evolution",
+      "group": "Quantitative Biology",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "q-bio.PE"
+      ]
+    },
+    {
+      "code": "q-bio.QM",
+      "official_name": "Quantitative Methods",
+      "zh_name": "Quantitative Methods",
+      "group": "Quantitative Biology",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "q-bio.QM"
+      ]
+    },
+    {
+      "code": "q-bio.SC",
+      "official_name": "Subcellular Processes",
+      "zh_name": "Subcellular Processes",
+      "group": "Quantitative Biology",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "q-bio.SC"
+      ]
+    },
+    {
+      "code": "q-bio.TO",
+      "official_name": "Tissues and Organs",
+      "zh_name": "Tissues and Organs",
+      "group": "Quantitative Biology",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "q-bio.TO"
+      ]
+    },
+    {
+      "code": "q-fin.CP",
+      "official_name": "Computational Finance",
+      "zh_name": "Computational Finance",
+      "group": "Quantitative Finance",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "q-fin.CP"
+      ]
+    },
+    {
+      "code": "q-fin.EC",
+      "official_name": "Economics",
+      "zh_name": "Economics",
+      "group": "Quantitative Finance",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "q-fin.EC"
+      ]
+    },
+    {
+      "code": "q-fin.GN",
+      "official_name": "General Finance",
+      "zh_name": "General Finance",
+      "group": "Quantitative Finance",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "q-fin.GN"
+      ]
+    },
+    {
+      "code": "q-fin.MF",
+      "official_name": "Mathematical Finance",
+      "zh_name": "Mathematical Finance",
+      "group": "Quantitative Finance",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "q-fin.MF"
+      ]
+    },
+    {
+      "code": "q-fin.PM",
+      "official_name": "Portfolio Management",
+      "zh_name": "Portfolio Management",
+      "group": "Quantitative Finance",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "q-fin.PM"
+      ]
+    },
+    {
+      "code": "q-fin.PR",
+      "official_name": "Pricing of Securities",
+      "zh_name": "Pricing of Securities",
+      "group": "Quantitative Finance",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "q-fin.PR"
+      ]
+    },
+    {
+      "code": "q-fin.RM",
+      "official_name": "Risk Management",
+      "zh_name": "Risk Management",
+      "group": "Quantitative Finance",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "q-fin.RM"
+      ]
+    },
+    {
+      "code": "q-fin.ST",
+      "official_name": "Statistical Finance",
+      "zh_name": "Statistical Finance",
+      "group": "Quantitative Finance",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "q-fin.ST"
+      ]
+    },
+    {
+      "code": "q-fin.TR",
+      "official_name": "Trading and Market Microstructure",
+      "zh_name": "Trading and Market Microstructure",
+      "group": "Quantitative Finance",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "q-fin.TR"
+      ]
+    },
+    {
+      "code": "stat.AP",
+      "official_name": "Applications",
+      "zh_name": "Applications",
+      "group": "Statistics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "stat.AP"
+      ]
+    },
+    {
+      "code": "stat.CO",
+      "official_name": "Computation",
+      "zh_name": "Computation",
+      "group": "Statistics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "stat.CO"
+      ]
+    },
+    {
+      "code": "stat.ME",
+      "official_name": "Methodology",
+      "zh_name": "Methodology",
+      "group": "Statistics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "stat.ME"
+      ]
+    },
+    {
+      "code": "stat.ML",
+      "official_name": "Machine Learning",
+      "zh_name": "机器学习",
+      "group": "Statistics",
+      "aliases": [
+        "机器学习",
+        "ML"
+      ],
+      "kind": "category",
+      "members": [
+        "stat.ML"
+      ]
+    },
+    {
+      "code": "stat.OT",
+      "official_name": "Other Statistics",
+      "zh_name": "Other Statistics",
+      "group": "Statistics",
+      "aliases": [],
+      "kind": "category",
+      "members": [
+        "stat.OT"
+      ]
+    },
+    {
+      "code": "stat.TH",
+      "official_name": "Statistics Theory",
+      "zh_name": "统计理论",
+      "group": "Statistics",
+      "aliases": [
+        "统计理论"
+      ],
+      "kind": "category",
+      "members": [
+        "stat.TH"
+      ]
+    }
+  ]
+}

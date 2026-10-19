@@ -1,0 +1,17 @@
+<conclusion_section>
+{{conclusion_text}}
+</conclusion_section>
+<address>
+{{d2.address}}
+</address>
+<fact_sheet>
+{{d1.contributions}}
+{{d1.limitations_by_authors}}
+{{d1.experiments.cost}}
+{{d1.resources}}
+</fact_sheet>
+<experiment_analysis>
+{{d3c 输出中的 claims_evidence 与 weakest}}
+</experiment_analysis>
+
+请按 system 中的结构写出价值与应用。

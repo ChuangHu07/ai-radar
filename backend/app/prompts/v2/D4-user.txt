@@ -1,0 +1,8 @@
+<sections>
+{{d2、d3a、d3b、d3c、d3d、d3e 的全部输出}}
+</sections>
+<fact_sheet_concepts>
+{{d1.concepts}}
+</fact_sheet_concepts>
+
+请写出导读部分和一致性修正清单。

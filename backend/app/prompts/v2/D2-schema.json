@@ -1,0 +1,356 @@
+{
+  "type": "object",
+  "properties": {
+    "address": {
+      "type": "object",
+      "properties": {
+        "earth": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "tension": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name",
+            "tension"
+          ],
+          "additionalProperties": false
+        },
+        "country": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "tension": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name",
+            "tension"
+          ],
+          "additionalProperties": false
+        },
+        "state": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "tension": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name",
+            "tension"
+          ],
+          "additionalProperties": false
+        },
+        "city": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "tension": {
+              "type": "string"
+            },
+            "existing_routes": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name",
+            "tension",
+            "existing_routes"
+          ],
+          "additionalProperties": false
+        },
+        "street": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "contribution": {
+              "type": "string"
+            },
+            "headline_result": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name",
+            "contribution",
+            "headline_result"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "earth",
+        "country",
+        "state",
+        "city",
+        "street"
+      ],
+      "additionalProperties": false
+    },
+    "neighbors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "ref_id": {
+            "type": "string"
+          },
+          "relation": {
+            "type": "string"
+          },
+          "difference": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "ref_id",
+          "relation",
+          "difference"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "vacancy": {
+      "type": "string"
+    },
+    "work_type": {
+      "type": "object",
+      "properties": {
+        "primary": {
+          "type": "string"
+        },
+        "secondary": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "primary",
+        "secondary"
+      ],
+      "additionalProperties": false
+    },
+    "knowledge_map": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "level": {
+            "type": "string"
+          },
+          "term": {
+            "type": "string"
+          },
+          "en": {
+            "type": "string"
+          },
+          "why_needed": {
+            "type": "string"
+          },
+          "enough_standard": {
+            "type": "string"
+          },
+          "self_check": {
+            "type": "object",
+            "properties": {
+              "q": {
+                "type": "string"
+              },
+              "a": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "q",
+              "a"
+            ],
+            "additionalProperties": false
+          },
+          "quick_explain": {
+            "type": "string"
+          },
+          "learn_from": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "depends_on": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "level",
+          "term",
+          "en",
+          "why_needed",
+          "enough_standard",
+          "self_check",
+          "quick_explain",
+          "learn_from",
+          "depends_on"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "routes": {
+      "type": "object",
+      "properties": {
+        "beginner": {
+          "type": "object",
+          "properties": {
+            "prerequisites_in_order": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "focus": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "skip": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "estimated_time": {
+              "type": "string"
+            },
+            "paper_reading_order": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "prerequisites_in_order",
+            "focus",
+            "skip",
+            "estimated_time",
+            "paper_reading_order"
+          ],
+          "additionalProperties": false
+        },
+        "intermediate": {
+          "type": "object",
+          "properties": {
+            "prerequisites_in_order": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "focus": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "skip": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "estimated_time": {
+              "type": "string"
+            },
+            "paper_reading_order": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "prerequisites_in_order",
+            "focus",
+            "skip",
+            "estimated_time",
+            "paper_reading_order"
+          ],
+          "additionalProperties": false
+        },
+        "expert": {
+          "type": "object",
+          "properties": {
+            "prerequisites_in_order": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "focus": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "skip": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "estimated_time": {
+              "type": "string"
+            },
+            "paper_reading_order": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "prerequisites_in_order",
+            "focus",
+            "skip",
+            "estimated_time",
+            "paper_reading_order"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "beginner",
+        "intermediate",
+        "expert"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "address",
+    "neighbors",
+    "vacancy",
+    "work_type",
+    "knowledge_map",
+    "routes"
+  ],
+  "additionalProperties": false
+}

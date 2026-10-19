@@ -1,0 +1,13 @@
+<experiment_sections>
+{{experiment_section_text}}
+</experiment_sections>
+<tables>
+{{main_tables_markdown}}
+</tables>
+<fact_sheet>
+{{d1.contributions}}
+{{d1.experiments}}
+{{d1.resources}}
+</fact_sheet>
+
+请按 system 中的结构写出实验解读。

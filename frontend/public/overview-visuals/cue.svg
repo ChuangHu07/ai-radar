@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-labelledby="title desc">
+<title id="title">开头线索与推理路径</title><desc id="desc">简短开头线索接入模型生成的推理路径；只是概念示意，不代表所有模型都有效。</desc>
+<defs>
+<linearGradient id="bg" x2="1" y2="1"><stop stop-color="#09132d"/><stop offset=".55" stop-color="#14204b"/><stop offset="1" stop-color="#251752"/></linearGradient>
+<linearGradient id="glass" x2="1" y2="1"><stop stop-color="#c3dafe" stop-opacity=".22"/><stop offset="1" stop-color="#a58cff" stop-opacity=".07"/></linearGradient>
+<linearGradient id="beam" x2="1"><stop stop-color="#44d8ff"/><stop offset=".55" stop-color="#8b8bff"/><stop offset="1" stop-color="#f4a6ff"/></linearGradient>
+<radialGradient id="glow"><stop stop-color="#6e82ff" stop-opacity=".35"/><stop offset="1" stop-color="#6e82ff" stop-opacity="0"/></radialGradient>
+<filter id="soft"><feGaussianBlur stdDeviation="22"/></filter>
+<filter id="lift"><feDropShadow dx="0" dy="14" stdDeviation="17" flood-color="#010819" flood-opacity=".4"/></filter>
+<marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M1 1 L8 4.5 L1 8" fill="none" stroke="#8ce7ff" stroke-width="1.8"/></marker>
+</defs>
+<rect width="1200" height="440" rx="32" fill="url(#bg)"/>
+<circle cx="280" cy="60" r="300" fill="url(#glow)"/><circle cx="960" cy="365" r="290" fill="url(#glow)"/>
+<path d="M0 365 C260 300 470 428 705 345 S1010 305 1200 230" fill="none" stroke="#637fc1" stroke-opacity=".14" stroke-width="2"/>
+<path d="M0 390 C260 325 470 453 705 370 S1010 330 1200 255" fill="none" stroke="#637fc1" stroke-opacity=".1" stroke-width="2"/>
+<g fill="#a5b4fc" opacity=".48"><circle cx="58" cy="62" r="2"/><circle cx="1124" cy="73" r="2"/><circle cx="1088" cy="375" r="2"/><circle cx="177" cy="382" r="2"/></g>
+<rect x="85" y="95" width="400" height="250" rx="23" fill="url(#glass)" fill-opacity=".82" stroke="#c4d8ff" stroke-opacity=".34" filter="url(#lift)"/><rect x="1020" y="128" width="95" height="190" rx="23" fill="url(#glass)" fill-opacity=".82" stroke="#c4d8ff" stroke-opacity=".34" filter="url(#lift)"/><rect x="121" y="139" width="215" height="18" rx="9" fill="#a3b9e3" fill-opacity=".28"/><rect x="121" y="178" width="278" height="18" rx="9" fill="#a3b9e3" fill-opacity=".19"/><rect x="121" y="217" width="148" height="48" rx="15" fill="#7be0fa" fill-opacity=".78" stroke="white" stroke-opacity=".55"/><rect x="281" y="217" width="118" height="48" rx="15" fill="#cfadff" fill-opacity=".3" stroke="#b9adff"/><path d="M273 241 H298" stroke="white" stroke-width="4" stroke-linecap="round"/><path d="M405 241 C471 240 468 310 527 303 C569 299 552 211 580 210 C620 208 631 175 665 175 S720 209 750 209 S803 170 835 170 S886 209 920 209 H1002" fill="none" stroke="url(#beam)" stroke-width="7" stroke-linecap="round" marker-end="url(#arrow)"/><path d="M535 302 C590 334 659 325 717 337" fill="none" stroke="#8ca4ce" stroke-opacity=".26" stroke-width="5" stroke-dasharray="4 13" stroke-linecap="round"/><circle cx="580" cy="210" r="19" fill="#70dfff" fill-opacity=".82"/><circle cx="665" cy="175" r="17" fill="#8bc7ff" fill-opacity=".82"/><circle cx="750" cy="209" r="19" fill="#a7a8ff" fill-opacity=".82"/><circle cx="835" cy="170" r="17" fill="#d0a4ff" fill-opacity=".82"/><circle cx="920" cy="209" r="22" fill="#f2a5ea" fill-opacity=".82"/><circle cx="1067" cy="225" r="37" fill="#80e9ff" fill-opacity=".25"/><path d="M1067 188 L1075 217 L1104 225 L1075 233 L1067 262 L1059 233 L1030 225 L1059 217 Z" fill="#baf7ff"/>
+</svg>

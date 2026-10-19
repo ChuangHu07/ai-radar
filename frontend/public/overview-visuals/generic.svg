@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-labelledby="title desc">
+<title id="title">论文视觉导读</title><desc id="desc">抽象的三个层次象征问题、方法和观察结果；实际内容请以正文及论文为准。</desc>
+<defs>
+<linearGradient id="bg" x2="1" y2="1"><stop stop-color="#09132d"/><stop offset=".55" stop-color="#14204b"/><stop offset="1" stop-color="#251752"/></linearGradient>
+<linearGradient id="glass" x2="1" y2="1"><stop stop-color="#c3dafe" stop-opacity=".22"/><stop offset="1" stop-color="#a58cff" stop-opacity=".07"/></linearGradient>
+<linearGradient id="beam" x2="1"><stop stop-color="#44d8ff"/><stop offset=".55" stop-color="#8b8bff"/><stop offset="1" stop-color="#f4a6ff"/></linearGradient>
+<radialGradient id="glow"><stop stop-color="#6e82ff" stop-opacity=".35"/><stop offset="1" stop-color="#6e82ff" stop-opacity="0"/></radialGradient>
+<filter id="soft"><feGaussianBlur stdDeviation="22"/></filter>
+<filter id="lift"><feDropShadow dx="0" dy="14" stdDeviation="17" flood-color="#010819" flood-opacity=".4"/></filter>
+<marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M1 1 L8 4.5 L1 8" fill="none" stroke="#8ce7ff" stroke-width="1.8"/></marker>
+</defs>
+<rect width="1200" height="440" rx="32" fill="url(#bg)"/>
+<circle cx="280" cy="60" r="300" fill="url(#glow)"/><circle cx="960" cy="365" r="290" fill="url(#glow)"/>
+<path d="M0 365 C260 300 470 428 705 345 S1010 305 1200 230" fill="none" stroke="#637fc1" stroke-opacity=".14" stroke-width="2"/>
+<path d="M0 390 C260 325 470 453 705 370 S1010 330 1200 255" fill="none" stroke="#637fc1" stroke-opacity=".1" stroke-width="2"/>
+<g fill="#a5b4fc" opacity=".48"><circle cx="58" cy="62" r="2"/><circle cx="1124" cy="73" r="2"/><circle cx="1088" cy="375" r="2"/><circle cx="177" cy="382" r="2"/></g>
+<rect x="85" y="95" width="275" height="250" rx="23" fill="url(#glass)" fill-opacity=".82" stroke="#c4d8ff" stroke-opacity=".34" filter="url(#lift)"/><rect x="462" y="75" width="275" height="290" rx="23" fill="url(#glass)" fill-opacity=".82" stroke="#c4d8ff" stroke-opacity=".34" filter="url(#lift)"/><rect x="839" y="95" width="275" height="250" rx="23" fill="url(#glass)" fill-opacity=".82" stroke="#c4d8ff" stroke-opacity=".34" filter="url(#lift)"/><path d="M385 220 H443 M760 220 H820" stroke="url(#beam)" stroke-width="9" stroke-linecap="round" marker-end="url(#arrow)"/><circle cx="223" cy="215" r="66" fill="#67d9f8" fill-opacity=".11" stroke="#8de6fc" stroke-width="3" stroke-opacity=".68"/><path d="M195 215 H250 M223 187 V244" stroke="#9fe9ff" stroke-width="7" stroke-linecap="round"/><rect x="514" y="136" width="170" height="42" rx="15" fill="#88c5ff" fill-opacity=".62"/><rect x="535" y="200" width="170" height="42" rx="15" fill="#ae9bff" fill-opacity=".58"/><rect x="514" y="264" width="170" height="42" rx="15" fill="#ddabf2" fill-opacity=".45"/><circle cx="977" cy="215" r="64" fill="#dbb6f9" fill-opacity=".16" stroke="#d6baff" stroke-width="3" stroke-opacity=".72"/><path d="M940 218 L966 244 L1016 190" fill="none" stroke="#e7d9ff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

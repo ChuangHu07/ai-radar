@@ -1,0 +1,20 @@
+<method_sections>
+{{method_section_text}}
+</method_sections>
+<figure_captions>
+{{relevant_captions}}
+</figure_captions>
+<fact_sheet_method>
+{{d1.method}}
+{{d1.experiments.ablations}}
+{{d1.key_equations}}
+</fact_sheet_method>
+<address>
+{{d2.address}}
+{{d2.neighbors}}
+</address>
+<knowledge_map>
+{{d2.knowledge_map 中的 id、level、term}}
+</knowledge_map>
+
+请按 system 中的结构写出核心思想和方法拆解。

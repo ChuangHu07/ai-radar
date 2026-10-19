@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "mode": "single",
+  "sections": [
+    {"key":"storyline","title":"研究坐标与主线","guide":"从大领域到具体问题和本文切入点，说明问题、方法、结果的主线。"},
+    {"key":"prerequisites","title":"必要知识","guide":"只解释理解本文所需概念；术语首次出现给通俗解释。"},
+    {"key":"method","title":"方法拆解","guide":"解释输入、步骤、目的、输出；必要公式解释符号和含义。"},
+    {"key":"evidence","title":"证据核查","guide":"保留实验、证明或其他证据的条件、比较对象、结果，区分作者主张与可支持结论。"},
+    {"key":"limits","title":"价值与边界","guide":"只陈述材料支持的用途、局限和范围，区分作者结论和分析。"},
+    {"key":"takeaways","title":"知识收获","guide":"提炼少量关联的知识点，帮助读者解释学到了什么。"}
+  ]
+}

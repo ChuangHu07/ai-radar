@@ -1,0 +1,19 @@
+<draft>
+{{assembled_draft}}
+</draft>
+<fact_sheet>
+{{d1_json}}
+</fact_sheet>
+<rule_check_report>
+{{rule_check_report}}
+</rule_check_report>
+
+请审校以上精读稿，输出 JSON：
+{
+  "overall_pass": false,
+  "scores": {"E1": 0, "E2": 0, "E3": 0, "E4": 0, "E5": 0, "E6": 0, "E7": 0, "E8": 0},
+  "issues": [
+    {"check": "E5", "section": "公式精讲 Eq.3", "severity": "high|medium|low", "problem": "", "fix": ""}
+  ]
+}
+scores 每项 1–5 分。存在 high 级问题时 overall_pass 必须为 false。

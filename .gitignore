@@ -1,0 +1,17 @@
+/devpost/learner-profile.md
+.env
+.env.*
+!.env.example
+.venv/
+.local-data/
+node_modules/
+frontend/dist/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.tsbuildinfo
+/devpost/*-preview.jpg
+/devpost/*-preview.png
+/.agents/
+/.claude/
+/agent/

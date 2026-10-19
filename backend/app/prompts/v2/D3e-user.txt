@@ -1,0 +1,15 @@
+<references>
+{{reference_list}}
+</references>
+<core_and_method>
+{{d3a 输出}}
+</core_and_method>
+<address_and_map>
+{{d2 输出}}
+</address_and_map>
+<fact_sheet>
+{{d1.prior_work}}
+{{d1.contributions}}
+</fact_sheet>
+
+请按 system 中的结构写出自测与延伸阅读。

@@ -1,0 +1,19 @@
+{
+  "month": "2026-09",
+  "verified_at": "2026-10-07",
+  "source_url": "https://info.arxiv.org/about/reports/submission_category_by_year.html",
+  "source_revision": "https://github.com/arXiv/arxiv-docs/blob/develop/source/about/reports/submission_category_by_year.md",
+  "counts": {
+    "cs": 18427,
+    "math": 8558,
+    "physics": 4714,
+    "cond-mat": 2146,
+    "astro-ph": 2034,
+    "eess": 1431,
+    "hep": 1430,
+    "stat": 905,
+    "econ": 286,
+    "q-bio": 252,
+    "q-fin": 127
+  }
+}
