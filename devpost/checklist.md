@@ -1,202 +1,44 @@
----
-doc: checklist
-status: approved
-updated: 2026-10-16
-approved: 2026-10-04
----
-
-# AI Radar — 构建清单
-
-Build mode: learn — 用户于 2026-10-04 明确“我同意learn模式”，随后明确“同意”构建顺序与本地 Git 初始化。每步机械验证通过后，简要讲解、由团队实际试用并反馈，问题修复后提交检查点再继续。不再询问模式、顺序或 Git 初始化。
-
-范围、PRD 和完整技术方案均已批准。构建按可实际打开尝试的小步进行，每一步跨页面和处理服务，不把纯脚手架作为单独成果。两人职责沿用“页面角色 / 处理角色”，成员姓名和系统对应尚未指定；首次团队试用时补充归属，不默认 Windows 做页面或 macOS 做后端。
-
-Git 准备：已根据用户同意初始化 main 分支的本地仓库。不创建远程仓库、不推送或对外发布。现有 .gitignore 已排除 learner-profile.md 和真实 .env；构建时增加 .venv、node_modules、.local-data 等运行目录规则。每次提交只暂存该步文件并检查 diff，检查点不包含密钥、个人档案或无关工作。
-
-2026-10-07：用户将累计开发验证费用上限由 15 元提高到 100 元，历史账本保留。`cs.AI` 等官方小类已支持精确检索与自定义标签；官方投稿月榜仍是大类。双语真实模型验证因本机执行环境的文件与网络权限相互隔离尚未通过，故语言步骤暂不勾选；详见 `build-verification.md`。
-
-同日继续检查语言版：精读知识卡学习资源、中文联合报告标题已纳入转换，双语正文和知识卡分段显示，Markdown 标题层级逐项核对。174 项后端测试与前端构建通过；仍待真实千问输出及团队试读，保留第 5 步未勾选。
-
-2026-10-13：用户实测 `cs.AI` 速览出现数字来源错误；修复并复核后，新的真实五篇任务已成功生成并可在应用和保存页打开，178 项测试通过。第 2 步的机械生成已过；仍需用户对这批新论文试读，并从速览选一篇进入精读检查身份，因此按 learn 模式暂不勾选。保存页不含旧五篇的场景图，避免配错论文。详情见 `build-verification.md`。
-
-## Slices
-
-2026-10-15：用户对上轮提交的可用报告和交互明确“验收成功”。第 2–5 步按已提交的真实速览、75 页联合报告、混合清单、标签月榜和三种报告语言记录通过；单篇语言验证使用保留的 Claude 中文基准，翻译由千问完成。新千问单篇 F003 与第二版场景图作为已知缺陷继续修复，不回退用户已通过的体验；第 6 步与最终交付仍待 macOS 实机证据。详见 `continuation-1-5-2026-10-14.md`。
-
-2026-10-13 英文子项体验验收：用户明确“验收通过”，已确认当前 cs.AI 五篇英文速览、配图与顶部选篇交互。第 5 步仍保留未勾选，因为英文精读真实生成和完整双语流程尚未验证；q-bio 新任务的数字引用失败也仍需修复。
-
-- [x] **1. 上传一篇 PDF，得到真实中文精读报告**
-  Becomes usable: 本机网页可上传一篇论文，看到解析状态，材料就绪后点击“生成报告”，得到有来源的 v2 分层中文导读；失败可看到原因并重传 / 移除。
-  Why now: 尽早验证项目核心：整篇正文、Claude API、固定讲述和可追溯来源，而非先堆页面。脚手架、依赖、配置与本机连通随这一步一起建立。
-  PRD ref: `prd.md > 统一精读材料`、`精读报告启动（已确认）`、`单篇精读框架（已确认测试基线）`、`精读品控（已确认测试基线）`
-  Spec ref: `spec.md > 2. Where It Runs and How Someone Tries It`、`5.1 材料接收与全文解析`、`5.3 单篇与联合精读`、`7.3 任务执行与页面返回`、`8. API Contracts — 两人联调的约定`
-  Build: 两人共同约定 contracts.py / types.ts；页面角色实现精读页、上传 / 清单 / 分层 ReportView，使用已选样式 tokens；处理角色建立 FastAPI、pypdf 检查、临时材料、任务表、Claude 两步证据与结构整理、单篇模板。配置来自本机 .env，记录实际 Node / Python 与依赖锁版本；界面早期样例标注测试数据，最终验收使用真实 PDF 和模型结果。首轮实际调用建议控制在约 $1–2，记录 usage，不强行承诺报告次数。
-  Verify (mechanical): 启动后端与前端，检查 health；运行文件类型 / 大小 / 页数 / 无正文及未就绪启动测试；用一篇可合法获取的真实数字化 PDF 生成报告，检查当前十部分导读、物理页范围、关键数字和至少三条主张的正文依据，保存实际费用与时延。分别记录两系统能否启动，尚未验证的系统不记通过。
-  Learner check: 打开本机页面，上传一篇熟悉的论文，点击生成；看十部分导读是否便于理解、研究定位是否准确、引用能否回看。再替换一个失败文件，确认按钮只有材料就绪后可用，反馈最需要改的讲述或操作。
-  Commit: `Add real single-paper PDF reading with source evidence`
-
-- [x] **2. 选择 arXiv 分类，自动获得最新论文速览并进入精读**
-  Becomes usable: 首页输入领域后选择官方分类，获取最新最多 5 篇论文并自动生成 v2 分层速览；选择其中一篇可带入已可用的精读页。
-  Why now: 单篇正文路径已有真实证据，此步验证另一半核心能力：最新资源、简明发现和从发现到学习的衔接。
-  PRD ref: `prd.md > The Core Journey`、`领域与分类检索`、`前沿速览输出框架（已确认）`、`速览生成前的异常确认（已确认）`
-  Spec ref: `spec.md > 4.1 分类、检索与论文信息`、`5.2 前沿速览`、`5.4 三种报告语言与生成品控`、`8. API Contracts — 两人联调的约定`
-  Build: 页面角色实现首页分类候选、速览页、逐篇异常选择和进入精读入口；处理角色实现分类 / 中文别名、arXiv Atom 解析、UTC 截止、首次投稿排序、版本去重、串行限速、下载与 S1–S4 速览模板。失败且摘要可用须用户明确选择，不能自动回退或补齐；首页右上角仍可独立上传。先连通中文模式，其余报告语言在第 5 步完成。
-  Verify (mechanical): 测试 0 / 5 / 10 条来源结果、重复版本与晚于截止条目，确认最多取 5 篇；检索失败与零结果分别反馈；全文失败模拟必须停在选择状态。真实请求一个分类，核对官方 metadata 与日期，生成实际速览，检查固定本批总览、折叠信息与展开五部分，以及研究定位和篇幅目标；从速览选一篇，核对传入材料身份。
-  Learner check: 搜索一个关注领域，看看每张卡片是否能快速说清楚“在做什么”；选一篇进入精读。遇到全文失败时检查继续 / 移除的提示是否清楚，确认摘要依据明确显示。
-  Commit: `Add latest arXiv discovery and frontier overview journey`
-
-- [x] **3. 编辑混合材料清单并生成完整联合精读**
-  Becomes usable: 速览论文与上传 PDF 可混合添加、移除、替换；一篇单读、2–10 篇联合，任何失败项都会阻止生成，修复后得到真正的六栏联合对照报告。
-  Why now: 两条真实入口都已可用，才验证用户指定论文簇与完整材料覆盖，避免多篇报告变成单篇结果的拼接。
-  PRD ref: `prd.md > 统一精读材料`、`精读失败材料恢复（已确认）`、`联合精读启动条件（已确认）`、`联合精读框架（已确认测试基线）`
-  Spec ref: `spec.md > 5.1 材料接收与全文解析`、`5.3 单篇与联合精读`、`7.1 字段与状态`、`7.3 任务执行与页面返回`
-  Build: 页面角色完善多选、批量上传、同条替换、模式 / 阻塞状态；处理角色实现清单 revision、整批数量限制、材料快照、完整分段证据覆盖、联合模板、逐篇路线 / 证据条件对照和质量检查。已有证据只在同一材料版本复用，不截断超额正文，不自动漏篇。
-  Verify (mechanical): 测试 9 篇加 2 篇整批拒绝且原清单不变，替换保留 ID，删除至 1 / 0 篇正确改变模式；失败材料或任一页段失败不能发布完整报告。实际用两篇相关论文生成联合报告并逐条回看关键对照依据，另验证最多 10 篇的材料完整 / 容量边界并记录实际费用。
-  Learner check: 从速览选两篇，再上传一篇；删除 / 替换材料，看模式与按钮是否正确。生成联合报告，确认每篇都能识别、共同知识没有重复讲三遍，不可比较条件清楚说明。
-  Commit: `Add editable mixed materials and complete joint reading`
-
-- [x] **4. 首页标签可保留，官方月度排行可可靠获取**
-  Becomes usable: 自定义分类标签首次待添加、重开仍保留；官方最新可用月份的投稿量排行可点击检索，失败时隐藏，自动最多三次，手动每次一次。
-  Why now: 核心检索已能使用，真实标签能直接接入；此步独立核查特殊统计来源、分组映射与重开计数，避免用造榜单代替数据能力。
-  PRD ref: `prd.md > 领域与分类检索`、`States and Boundaries`
-  Spec ref: `spec.md > 4.2 月度投稿排行与用户标签`、`7.2 本机保存与生命周期`、`8. API Contracts — 两人联调的约定`
-  Build: 页面角色实现添加 / 删除自定义标签、月份与数量显示、区域外手动入口及次数状态，根据实际 UI 空间与团队反馈确定排行条数；处理角色从官方源样本验证 Group 数据读取、合并组 members、非负计数与最新可用月，实现设置 JSON 原子保存、3 / 10 秒重试及持久停止状态。未知格式报错，不执行远程脚本或把缺失当零。
-  Verify (mechanical): 官方源样本解析与分组测试，真实获取一次核对月份 / 排序 / 来源；失败三次、重新挂载、重启后都不重置；手动一次请求失败不自行继续。保存分类并重启服务 / 页面后确认保留，标签点击仍使用官方检索映射。
-  Learner check: 添加几个关注分类后重开软件，再从排行点击一个大类，看检索对应是否合理。确认月份清楚，窄窗口能放下的标签数量与界面布局符合预期。
-  Commit: `Add persistent category shortcuts and official monthly rankings`
-
-- [x] **5. 界面双语、报告三语及生成恢复完整可用**
-  Becomes usable: 界面中文 / English 与报告中文 / 英语 / 双语独立选择并保留；已有报告换语言直接生成同事实版本，生成失败可重试 / 退出，旧任务不会覆盖新任务。
-  Why now: 三套真实报告及材料范围已稳定，此步验证语言变换与失败恢复是否保持相同事实和来源，不用三套互不一致的模板实现。
-  PRD ref: `prd.md > 界面语言与报告语言`、`报告生成失败恢复（已确认）`、`前沿速览品控（已确认）`、`精读品控（已确认测试基线）`
-  Spec ref: `spec.md > 5.4 三种报告语言与生成品控`、`7.2 本机保存与生命周期`、`7.3 任务执行与页面返回`、`8.1 错误约定`
-  Build: 页面角色补齐 zh / en 文案、独立语言控件、双语逐栏排版、生成 / 重试 / 退出反馈；处理角色实现固定 facts 语言版本、目标语言任务、幂等与取消、对齐检查、两项持久语言及账户 / 限流 / 截断错误映射。尚无精读报告时选择语言不代替首次生成按钮，换界面语言不调用模型。
-  Verify (mechanical): 核对三类报告各语言结构与一组真实报告的数字 / 条件 / 引用一致性；测试首次两项中文、英文界面 / 双语报告重开独立保留、快速连续语言切换及取消后晚到响应、retry 快照不变。输出截断 / 不存在引用 / API 错误不得变成成功报告。
-  Learner check: 使用英文界面生成中文或双语报告，再切换报告语言，确认无需额外点击且事实不变。试用退出 / 重新生成，确认清单保留、当前目标与状态清楚。
-  Commit: `Add independent interface languages and consistent report versions`
-
-- [ ] **6. 完整软件可在 Windows 演示并通过最终体验检查**
-  Becomes usable: 每次打开播放同风格 1–3 秒艺术字开场且可跳过；层叠视觉与长文可读，构建后的网页由本机服务提供，Windows 有可复现的运行与演示记录；保留 macOS 启动方案，实机验证为额外可选项。
-  Why now: 核心功能已真实工作，最后把所有入口、视觉与启动整合为完整演示，不让动效代替关键能力验证。
-  PRD ref: `prd.md > 开场`、`Look and Feel`、`Acceptance Criteria`、`The Core Journey`
-  Spec ref: `spec.md > 2. Where It Runs and How Someone Tries It`、`5.4 三种报告语言与生成品控`、`9. File Structure — 计划文件与职责`、`11.1 核心验收矩阵`
-  Build: 页面角色精修 Intro、tokens / app.css、窄窗口 / 双语长报告及失败信息；处理角色实现 frontend/dist 本机静态服务、启动辅助、临时会话清理与 README 双系统步骤。两人各验证本机，补齐 PRD 行为，实际反馈的细微调整记录后修复。
-  Verify (mechanical): 运行规则测试与 npm run build，在 Windows 按开发 / 构建演示命令启动；浏览器检查开场时长与跳过、分类 → 速览 → 选择 / 上传 → 单篇 / 联合 → 换语言完整流程。核查中文 / 空格路径、缓存 / 清理边界，记录失败与修复。macOS 实测单列可选，不影响必做项完成，未测仍标未测。
-  Learner check: 按 README 在 Windows 打开软件自由试用，完成正常流程并尝试失败材料、零结果、超限和语言切换，反馈不清楚或不符合预期的地方；最终修复后确认是否准备好演示。Mac 成员可自行补充试用。
-  Commit: `Complete cross-platform AI Radar demo and visual polish`
-
-## Hands-on Checkpoints
-
-- [x] Early usable behavior explored — 第 1 步真实单篇精读完成后，团队尝试正文讲述 / 引用并反馈，以便调整后续模板实现。
-- [x] Integrated core journey explored — 第 3 步完成后，团队尝试检索速览与混合材料联合精读的衔接；2026-10-15 用户确认本轮验收成功。
-- [ ] Final kick-the-tires exploration and feedback completed — 第 6 步后，Windows 正常流程与异常体验；macOS 可选。
-
-learn 模式每步均执行 Learner check；fast 模式至少在上述三个节点试用。只有团队实际反馈并修复后才能勾选，不将 agent 测试视为用户体验检查。
-
-## Final Review
-
-- [ ] Final review complete — feedback resolved and learner confirms ready to ship
-
-尚未开始最终评审。届时将团队确认的修订写为此处未完成任务，逐项修复、验证、提交并请团队重试；当前没有未报告的“已通过”结果。
-
-## Code Tour and App Map
-
-- [x] Learning activity complete — 2026-10-16 brief evidence-based recap；非交互式巡览，不宣称用户已掌握代码。
-- [x] Optional edit and transfer reflection addressed — 本轮以缺陷修复与交接为主，可选小改动／反思不设为完成条件，不要求复述或测验。
-- [x] `devpost/app-map.html` generated from current code, checked, and shown, including a project-grounded practice to reuse
-
-Activity and evidence: 2026-10-16 简短静态讲解：以实际生成按钮、材料版本冻结、分块生成与审校解释软件怎样工作；用 F003 同页引文截断实例连接“先对照当前稿、证据和原件再修”的可复用实践。聊天中已说明，两人职责和参考代码路线写入地图；不是用户已执行的实践证明。
-Route and stops: `ReadingPage.tsx > generate` → `main.py > reading` / `jobs.py > enqueue` → `learning.py > generate_learning_report`；代码锚点已核对。地图源代码参考提交 `eb468a0`。
-Edit outcome: 本轮实际修复由 agent 实施并验证，未安排额外练习；不冒充用户亲自修改。
-Reflection: 反思可选，本轮不要求用户回答；无个人学习评价或代写反馈。
-Activity mode: brief recap + static reference route；`devpost/app-map.html` 浏览器显示和离线依赖检查通过，后续实现变化时同步更新。
-
-## Revisions
-
-- 2026-10-16：用户明确将 macOS 实机验证列为额外备选，非必做；保留跨平台代码与启动文档，不据未测声称 Mac 已通过。第 6 步及最终收尾按 Windows 运行证据推进。剩余必做为新千问单篇修复、最终整体试用和简短学习回顾／应用地图，之后再准备演示与提交。
-
-- 2026-10-15 验收后修复：F003 同页引文补齐后通过；第三版 q-bio 五图真实来源审校通过并接入独立 8015 应用。214 项完整回归通过，应用地图与双系统交接已整理。新千问单篇最后审校仍失败，涉及审校 style/medium 分类冲突以及知识解释、Q6 引用待修，未发布。Mac 实机与最终学习回顾仍未勾选；详见 `followup-2026-10-15.md`。
-
-- 2026-10-13：用户在查看具体场景版五篇速览后明确回复“验收通过”。记录为当前页面**讲述与图片表达**的体验验收；这不替代论文事实复核，也不证明用户已在应用内完成分类检索、全文失败选择和选论文进入精读。第 2 步的剩余操作验收仍待完成，故本步暂不勾选；具体边界见 `novice-overview-acceptance.md`。随后在本机回环连接可用、项目内临时目录可写的环境里重跑后端全套测试，174 项通过；启动应用并确认 `cs.AI` 匹配官方小类，但未触发新的付费速览。
-
-- 2026-10-13：团队反馈首版五张图太抽象。已把同一五篇报告改为论文相关的具体场景三步图，窄屏先展示场景预览、展开可看完整三步；未匹配论文不再展示通用装饰图。独立保存 `review-cs-ai-frontier-concrete-2026-10-13`，原图片版与正文、证据、PDF 保留。视觉准确性和是否更易懂仍待团队试读，第 2 步未勾选。
-
-- 2026-10-12：团队希望新版速览增加图片以帮助零基础读者理解并提升表现力。已为同一五篇试读报告加入逐篇概念 SVG、双语说明与“非论文原图或实验结果”标注，并保存独立图片版；当时其他论文使用通用图，已在 2026-10-13 修订中移除。原报告事实、证据、PDF 与旧对照版均不改动，无新增模型费用。图片表达效果列入 `novice-overview-acceptance.md`；第 2 步仍待团队试读，未勾选。
-
-- 2026-10-07，新版五篇速览已用原五篇 PDF 的相同 SHA-256 和已核对 S1 事实底稿做真实 S2/S3/S4 重新生成。首次草稿的两条事实阻塞已定点修订并再次独立审校；正式快照 `cs-ai-frontier-novice-2026-10-07` 已保存。十栏结构及来源/数字程序检查通过，原始审校及两条来源冲突裁定保留。零基础试读问题见 `novice-overview-acceptance.md`；旧版快照保留，第 2 步等待团队试读，仍未勾选。
-
-- 2026-10-07，第 2 步五篇速览试读：团队反馈零基础读者先看到专业术语，难以像看科普视频一样迅速理解“论文在干什么、解决什么问题”。保留原有批次与逐篇结构、专业定位、来源核查；逐篇固定增加排在专业层之前的 `plain`“先看懂”，总览也先用普通话提出共同麻烦。同步修订 PRD、spec 与 S2/S3/S4 可执行 Prompt。旧报告保持原样作为对照，新版结构与真实生成质量须复验后才能勾选第 2 步。
-
-- 2026-10-07：第 4 步官方月度排行已按真实图表接入。官方 2026-09 的 11 条 Archive 总数经 Group 交叉核对；同月重复行是已汇总的同一总数，已避免重复累加。hep 映射四个 hep 子类，physics 映射六组检索入口，均通过分类目录校验。首页默认前 6 个、可展开全部，离线展示带真实月份的已核实快照；自动三次及手动获取状态保留。第 5 步的中文 / English 界面及中文 / English / 中英双语报告派生和语言切换已接入，规则 / 模拟测试与浏览器设置保留通过；真实英译质量及团队体验尚未验证，两个步骤保持未勾选。`build-verification.md` 保存可核查结果。
-
-- 2026-10-07：第 4 步自定义分类标签已做出并在 Windows 页面刷新后核对；官方月度排行仍需验证图表 Group 数据和类别映射，故第 4 步保持未勾选。并发费用账本已保守对账为 ¥14.9962009 / ¥15，新增独立下界阻止陈旧账本误开放付费任务。未增加费用上限；第 2、3 步的用户试读及真实联合质量验证仍未完成。
-- 2026-10-07：第 6 步的 2 秒开场已实现，浏览器实测显示与点击跳过；仅是该步的一部分，双系统完整旅程与团队试用尚未完成。
-
-- 2026-10-06：用户看到最新 10 篇中 3 篇因 20 MiB 边界失败，要求提高 PDF 容量以覆盖多数论文，并决定首版先做最新 5 篇。官方 HEAD 核对三篇分别为 38.07、42.68、46.03 MiB；文件上限改为 50 MiB，速览检索目标改为 5 篇，联合精读清单的原 10 篇上限未改。此为用户明确提出的范围调整，已同步 scope、PRD、spec、README 和页面；第二步仍需真实 5 篇速览及团队试读后验收。
-
-- 2026-10-04 第二步真实审校达到上限后发现两张卡片仍有事实问题：主动重试改为接续最新卡片及累计问题，只修剩余阻断项并核查一次；仍失败停止。材料、事实、来源或 Prompt 变化不可复用，成功卡片也不退回初稿。保持初次两轮自动修订上限，保留本次 / 此前轮数和真实 usage。评分 schema 改为等价的 1–5 枚举以适配服务接口，范围不变。
-
-- 2026-10-04 第二步真实验证发现数值等价写法被误拒绝，及 S1 结果常漏引实验条件：区分图表编号 / 名称与实验数值，统一量级 / 序数；每篇 S1 最多一次定点修订，仍失败则报错。保持全部材料、真实来源、闭合格式与原 S4 修订上限；没有自动重试接口错误或取消硬标准。两种分支已回归，第二步仍待完整真实报告及团队试用。
-
-- 2026-10-04：用户同意现有六步顺序及本地 Git 初始化，checklist 标记 approved，已初始化 main；无需再次确认。
-- 第一步实现中：上传、失败材料替换 / 移除、单篇中文六栏、异步任务、冻结正文引用与两步 Claude 处理已接入。31 项规则测试、依赖检查、npm ci、构建与明确标注的测试数据浏览器流程通过；详见 build-verification.md。
-- 本机已有 Python 3.12.14，先用现有环境验证，不改变已批准的 3.14 基线；Python 3.14 / macOS 验证仍待完成。
-- 用户已配置真实 .env，密钥始终排除提交；Models 接口确认已批准型号可用。真实生成遇到截断及数字来源检查失败，均未展示部分报告；输出容量改为 16,000、完整同版证据可复用、数字 token schema 更明确、当前临时会话保留诊断草稿。属于保持行为的内部修复，未换型号或减少正文，失败费用也计入记录。
-- 数字误判已直接由真实草稿定位：指标名 F1 不作为数量，明确英文数词支持数值对应，36M 保留数值 token；未修改真实草稿即可通过修复后的检查。新增反例仍拒绝未出现的数字，网页全流程继续验证。图表 / 章节定位编号与测量值分别检查：原始论文标题验证定位，指定引文验证测量数字。
-- 真实单篇中文路径已通过：15 页、128 条引用、四条人工抽查及浏览器展开；本轮已返回 usage 估算 $2.199788。团队试用反馈与 macOS / Python 3.14 仍待完成；第一步未勾选、未提交，不提前进入第二步。
-
-- 2026-10-04 团队试用反馈：高频超声论文在报告核查时失败，PDF 上传与 11 页读取已完成，F29 条件漏绑定设备型号来源。已加强事实 / 条件引用要求，并让主动重试携带同版拒绝反馈；没有放宽质量检查或自动收费重试。补齐 fonttools 4.66.1 字体解析依赖。32 项测试、pip check 通过；同一原件真实生成成功，六栏 / 72 引用 / 全页覆盖 / 冻结原件一致，三条人工抽查及浏览器引用通过。等待用户查看报告反馈，第一步和早期体验检查保持未勾选、未提交，后续系统检查不省略。
-
-- 2026-10-04 用户反馈生成质量不足并提供四份 Prompt，明确要求按新规范修改。单篇以 v2 十部分学习路径替换旧六栏正文；新增结构化事实底稿、五级问题链、L0–L3 够用标准和自检、分块写作、公式五步讲解及独立审校。页内路线 / 复习 / 技术层不再次调用模型。速览采用所提供 S1–S4 输出设计，留在原第 2 步接入；最新十篇、全文就绪、人工选择论文簇和三语言边界不变。原件与版本化模板已保存，44 项测试与前端构建通过；正在用同一真实论文验证，未宣称质量或体验已经通过。
-
-
-## 2026-10-04 用户批准的完成性优先政策（v3）
-
-用户允许对理想讲解深度、篇幅、细粒度定位、比喻生动程度、资源与算例数量妥协；格式与使用标准不妥协。政策独立保存于 prompt-design/04_生成验收政策.md，原四份附件逐字保留。运行版本 user-prompts-2026-10-04-v3。
-
-严格保留完整 JSON / 闭合标签、固定栏目与路线、证据和概念 ID、有效依赖、完整材料、主动生成、原件引用与事实 / 公式准确性。每一部分可简短而够用；没有可靠资料时用透明缺失说明完成，不编造。仅 low 的教学 / 风格优化建议不触发重写，原审校结论与程序通过依据同时保留；medium/high 仍阻止发布，未通过且没有问题说明的审校也拒绝。最多两轮修订不变。
-
-47 项测试通过，新增仅软建议可完成且无重写、medium 问题仍有限修订后拒绝、无解释的审校拒绝不能当通过。旧 D2 修订接口已单独真实通过（完整 schema / 18概念 / 路线依赖 / 已有证据与概念编号），70.48秒、一次请求、usage估算$0.355164；这不代表整份报告已通过。
-
-### v3 实际接续验证与透明提示（2026-10-04）
-
-49项后端规则测试通过，覆盖显式重试仅接续受影响阶段、底稿变化与不完整检查点拒绝；前端TypeScript/Vite构建通过。原先整份v3任务a4bb5d11f0fb432bb0683cf66d8daf9d在第三次审校后仍有两处medium实验解释错误，未发布：1386.2秒、22次请求、usage估算$5.911216。
-
-显式接续任务b52f19761d3c486cab84c6686f8e8c28完成，报告b18114c28e9440eab5c137b38376d728。保持完整11页原件、129条证据、同SHA256；恢复真实拒绝草稿前验证材料版本/原件/模型/Prompt bundle/事实摘要/闭合格式与编号，修订D3c、重建D4、重新以原件D5审校，共3次新请求、251.41秒、usage估算$0.961422。本次1次审校，接续此前3次；没有把缓存命中当新模型生成。成功后移除进程检查点，私有恢复文件改名.completed，防止重启重复恢复旧拒绝状态。正常启动仍不保存论文/报告跨服务会话。
-
-两处原阻断问题经另一位审阅代理对照PDF第6/8页及第8页图像确认修复：FR=PRF/NA限于Method1，Method2每角度FR=PRF；Fig8为左心室商用机/Method2，Fig9才是主动脉三方对照。
-
-自动审校返回8条low，程序生成成功，但包含条件遗漏、创新性断言、统计解释与“无解/不能唯一确定”等待核查问题，不能据low标签宣称事实全部无误或科学质量已最终验收。页面顶部明确数量，各对应章节在正文前展示问题与审校建议，保留真实正文与原始审校；不因表达润色再自动收费重写。第一步/早期团队试用仍未勾选、未提交，等待用户实际体验及内容质量反馈。
-
-已返回usage记录累计估算$16.630554（含历次验证/失败及单阶段D2验证），不是本次单份费用或账户余额；未返回usage的取消/超时可能另计。账单未访问。
-
-### 2026-10-04 团队试用反馈：研究定位用专业词直接表达
-
-用户认可整体报告，指出“工程类型：修路”不易理解，以及第二部分无须地球/空地等名称。已将其改为直接说明研究贡献类型（旧“修路”对应“新方法解决已有问题”）；第二部分标题“研究定位与具体贡献”，保持从大到小的问题链，用研究领域/子领域/具体主题/关键问题/本文方案对应文章实际专业词。相关工作与区别、研究问题与缺口替代邻居/空地。不得借缺口断言“此前无人实现”。规则保存prompt-design/05_研究定位表达.md，编译注入精读和速览模板，覆盖原附件地理/工程表达；原四份附件未修改。
-
-当前已生成v3报告使用前端兼容整理展示名称，保留原事实/引用/报告ID与生成来源；没有重新调用模型，没有把修改展示当新生成或重新审校。后端组装也采用新栏目名称，新的生成按编译后的规则讲述；版本仍为v3，样式决定版本05-v1，manifest记录新增来源摘要，bundle摘要区别于旧模板。当前服务不重启，保留已生成报告。49项规则测试及前端构建通过，实际旧报告转换保持证据编号顺序不变。第一步仍待团队反馈解决及剩余验收，不提前勾选或提交。
-
-### 2026-10-04 第一步验收与续建
-
-用户实际上传、试用并反馈生成质量；完成 v3 品控和研究定位表达修订后，用户认可整体并要求继续。49 项后端测试通过；Windows 实际全文与原件引用、前端构建及页面检查已记录。当前报告保留 8 条自动审校 low 提示，不能据此承诺事实全部正确。macOS / Python 3.14 未实测，仍由第 6 步单独完成。第一步按实际试用反馈保存为检查点；不把未进行的双系统检查或最终学习巡览记为通过。
-
-### 第二步实现中的对齐
-
-首页提供官方类别/大类并集索引；官方分类表核查 2026-10-05 UTC（本地 2026-10-04），155 类/11 个多子类 archive。部分中文别名人工校对，未译类别保留官方英文。实际采用用户 S1–S4 分层卡片，而非历史四栏文字；固定字段与标签按可执行 schema 校验、结果数字与来源校验、独立审校；只允许 low 的优化建议完成，medium/high 最多两轮定向修订。最新时间/最多十篇/首次投稿排序/全文失败逐篇选择/用户指定精读均不变。第二步仍未验收或提交。
-
-- 2026-10-05：用户选择千问并授权继续，确定本次验证预算 15 元。供应商 / 原生 PDF / 引文编号选择 / 预算 / 缓存隔离已接入；真实全文验收见 build-verification.md，第二步继续未勾选。用户要求保留旧 Claude 结果，已另存可离线阅读的原报告、PDF、JSON、Markdown、哈希与 d18372e 代码包，不覆盖新结果。
-
-- 2026-10-05 最终：千问全文 / 引文 / D1 / D2 通过，真实审校后的公式修订缺 purpose 标签，停止复验，未发布 / 未提交。预算记账约 1.77 / 15 元；100 项测试通过不等于完整报告通过。原 Claude 对照包已永久保存在 sessions 之外并验证 ZIP。
-
-- 2026-10-05 用户再次请求解决办法：公式修订改为固定字段 JSON 补丁，由程序恢复完整标签；明确公式 ID 定向修订，null 原样保留，拒绝伪造引用 / 标签注入 / 错公式 / 空修订。缓存加入合约版本与 Schema，审校检查点绑定草稿摘要；审校诊断先核对原文。113 项后端测试通过，不据本地测试提前勾选第二步；在同一 15 元总预算内接续真实验证，结果另记 build-verification.md。
-
-- 本次真实接续结果：8 次请求 / 218.16 秒 / 估计 0.391924 元，公式补丁格式通过，内容仍未通过，无 report_id。人工核对发现审校误判与原稿真实错误并存，不降低事实 / 格式门槛，不冒充迁移完成；停止追加调用。累计预算记账 2.1618623 / 15 元，原 Claude 对照不变。缩短讲解、明确句级修订与核查审校依据是下一步建议，尚未实施。
-
-- 2026-10-05 用户授权按建议继续：已实施精简公式、可核查审校、已知问题接续和受限思考，134项本地测试通过。真实结果仍失败：修订有未完成句，审校引用旧稿；假通过结果已隔离，原模型回复与开发者复核分开留存。累计32次开发调用保护已触发，保守记账3.3643067 / 15元；不继续扣费、不勾选第二步、不提交混合改动。细节与下一步最小验证建议见 continuation.md 最新结果。
-
-- 2026-10-05 用户继续后完成单字段验证：Eq.2教学例子生成完整，正例通过、双程因子错误负例被拒，独立重算15.318663 mm/s一致；138项本地测试通过。独立新批次最多4次、实际3次，估计0.0186619元，总费用台账未重置，累计3.3829686 / 15元。等待团队试读 field-review.md；未接入完整修订链，未发布整篇或勾选第二步。
-
-- 用户指出Markdown行内公式显示源码并要求继续：已用与正式页面相同的KaTeX渲染生成HTML试读，浏览器确认14处公式正常，原Markdown保留。单字段生成→独立复核→合并已接入千问公式修订，140项测试通过；该整篇新路径尚未真实复验，无新增模型费用。
-
-
-- 2026-10-05 整篇接续：证据并集与概念索引输入修复，字段审校输出上限8192/思考2048，142项测试通过；真实9次请求后仍遇到审校公式与算术误判，未发布。累计保守记账3.4429073 / 15元，44次尝试。停止同类重试，更强审校小验证仅为建议，详情见 continuation.md 最新记录。
+# AI Radar — Delivery Evidence and Remaining Work
+
+Updated October 24, 2026. This is a current delivery record, not a retrospective claim that every historical attempt succeeded.
+
+## Delivery status
+
+| Item | Recorded status | Boundary |
+|---|---|---|
+| arXiv category discovery and up-to-five-paper overview | Implemented; real saved cs.AI and q-bio samples and team feedback recorded | Sample success is not guaranteed success for every paper/category |
+| Single-paper reading from uploaded PDF | Implemented; accepted Chinese baseline and later provider work recorded | Earlier failed generations remain failures; not all model outputs are scientifically certified |
+| Joint reading and editable mixed materials | Implemented; real separate two-paper/75-page example available in video | All final materials must be ready; no automatic skipped paper |
+| Chinese/English UI and three report languages | Implemented; team acceptance and saved variants recorded | Language preservation checks can reject a generation |
+| Paper picker and source excerpts/PDF pages | Implemented; shown in English demo | A source link is not proof of scientific entailment |
+| Category shortcuts and official monthly counts | Implemented; mapping, retry and persistence checks recorded | Counts are archive submissions, with actual month |
+| Concept scenes | Reviewed sample scenes plus grounded generation path implemented | Illustrations are explanatory, can be omitted on failure, and are not measured results |
+| Backend automated checks | 216 passed in the recorded October 18 Windows run | Mocked/synthetic tests, not a scientific-accuracy benchmark; not rerun for this documentation update |
+| Frontend build | Production build passed in the recorded October 18 run | Nonblocking bundle-size warning remained |
+| Windows operation | Local demonstration and first-party acceptance recorded | Requires valid provider configuration for new generation |
+| macOS operation | Setup/design supplied | Hardware execution optional and not completed |
+| Project map and learning wrap-up | Completed through an evidence-based explanation and code map | No claim that generated notes prove individual code mastery |
+| Public source and license | Published; MIT License | Credentials, original source PDFs, private reports and learner profile excluded |
+| English video | Published on YouTube, 2:58, captions and synthetic narration | Edited real views and saved reports; separate joint example disclosed |
+| Devpost submission | Submitted October 24; submission 1207755 | Submission confirmation is not an eligibility/winner decision |
+| Independent user validation | Protocol prepared; no independent results recorded | Team feedback is labeled first-party |
+| Personal website integration | Requested; site details pending | No hosted live AI service claimed |
+
+## Public evidence
+
+- [Submitted project](https://devpost.com/software/ai101)
+- [English demonstration](https://youtu.be/1sG9wfRfSuk)
+- [Public source](https://github.com/ChuangHu07/ai-radar)
+- [MIT License](../LICENSE)
+- [Planning scope](scope.md), [PRD](prd.md), [specification](spec.md)
+- [App map](app-map.md), [engineering decisions](engineering-notes.md)
+- [First-party feedback and independent study status](user-validation.md)
+
+## Follow-up checklist
+
+- [ ] Obtain consent and conduct independent sessions using the recorded protocol.
+- [ ] Report the number of actual participants, task outcomes, quotations with permission, and limitations.
+- [ ] Inspect the owner's website and agree link/embed versus live-backend architecture.
+- [ ] If live hosting is chosen, verify isolation, HTTPS, uploads, retention and usage controls before public access.
+
+These follow-ups do not undo the completed original submission. Any future public claim must match actual evidence.

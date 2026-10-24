@@ -4,7 +4,7 @@ AI-assisted research discovery and source-linked paper reading. Search an offici
 
 ## Demo
 
-Watch [the English demo with captions](https://chuanghu07.github.io/ai-radar/) or [download the MP4](https://raw.githubusercontent.com/ChuangHu07/ai-radar/main/demo/AI-Radar-demo-en-natural-2026-10-23.mp4). It shows the working local interface and previously generated real reports. The separate two-paper example is labeled explicitly. Generation waiting time is omitted; this is an edited application walkthrough, not a claim of live inference.
+Watch [the YouTube demo](https://youtu.be/1sG9wfRfSuk), [the English demo with captions](https://chuanghu07.github.io/ai-radar/) or [download the MP4](https://raw.githubusercontent.com/ChuangHu07/ai-radar/main/demo/AI-Radar-demo-en-natural-2026-10-23.mp4). It shows the working local interface and previously generated real reports. The separate two-paper example is labeled explicitly. Generation waiting time is omitted; this is an edited application walkthrough, not a claim of live inference.
 
 ## Features
 
@@ -66,3 +66,32 @@ The model selects evidence identifiers from retained source text; deterministic 
 Normal paper/report sessions are temporary and are cleared when the local processing service restarts; category settings persist. Saved review artifacts used in the video are separate from normal sessions and are not bundled here. arXiv/provider access may fail. Failed materials must be replaced or removed before deep reading can start. This local proof of concept has no accounts, public deployment, OCR, or claim of human-certified scientific accuracy.
 
 This publication snapshot includes application source, tests, dependency locks, sanitized plans and the demo. It excludes credentials, personal learner context, local reports, source PDFs, usage ledgers, caches and the private development Git history. The project's original code is available under the [MIT License](LICENSE); third-party dependencies retain their own licenses.
+
+## Planning and review evidence
+
+The current public scope, product requirements, specification and delivery record are in English. Original dated Chinese development records remain recoverable in earlier Git revisions; this edition consolidates the accepted final behavior rather than presenting superseded planning states as unfinished work.
+
+- [Scope](devpost/scope.md), [PRD](devpost/prd.md), [technical specification](devpost/spec.md)
+- [Delivery evidence and remaining work](devpost/checklist.md), [app map](devpost/app-map.md)
+- [Engineering decisions and limits](devpost/engineering-notes.md)
+- [First-party feedback and independent validation protocol](devpost/user-validation.md) — independent sessions currently recorded: zero
+
+## Application screenshots
+
+Actual English application views from the same saved examples used in the demo. They show the interface and generated explanations, not independent verification of the papers' scientific results. The joint-reading source view is a separate two-paper example.
+
+### Homepage and official category discovery
+
+![English homepage with category search, shortcuts and official monthly counts](demo/screenshots/01-home.jpg)
+
+### Concrete explanation scene
+
+![Paper overview showing a three-step concept illustration, not an experimental figure](demo/screenshots/02-concrete-scene.jpg)
+
+### Compact paper selection
+
+![Top-level picker used to choose one or several papers](demo/screenshots/03-paper-picker.jpg)
+
+### Source evidence in a joint report
+
+![Separate two-paper joint report with original excerpt and physical PDF page reference](demo/screenshots/04-source-evidence.jpg)
