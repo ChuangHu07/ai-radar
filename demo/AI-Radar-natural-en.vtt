@@ -1,0 +1,193 @@
+WEBVTT
+
+1
+00:00:00.088 --> 00:00:05.388
+We built AI Radar because finding a paper and understanding it are
+two different
+
+2
+00:00:05.388 --> 00:00:06.088
+challenges.
+
+3
+00:00:06.475 --> 00:00:11.562
+Researchers need to keep up, while students entering a new field
+can feel lost
+
+4
+00:00:11.562 --> 00:00:12.575
+in technical language.
+
+5
+00:00:12.988 --> 00:00:14.775
+We wanted to make that first step easier.
+
+6
+00:00:15.600 --> 00:00:20.938
+The homepage keeps things simple: a central search box, saved
+category shortcuts,
+
+7
+00:00:21.162 --> 00:00:22.838
+and monthly submission rankings.
+
+8
+00:00:23.225 --> 00:00:26.462
+Deep reading and language settings are available at the top.
+
+9
+00:00:27.267 --> 00:00:31.029
+Search an official arXiv category by name or code.
+
+10
+00:00:31.492 --> 00:00:36.454
+For example, C S dot A I takes us straight to artificial
+intelligence.
+
+11
+00:00:37.254 --> 00:00:43.317
+Selecting a category retrieves up to five recent papers and
+generates an overview.
+
+12
+00:00:43.729 --> 00:00:48.329
+Here, we're opening a saved report, starting with the shared
+research context.
+
+13
+00:00:49.142 --> 00:00:53.567
+Each paper pairs a plain language explanation with a concrete
+illustration.
+
+14
+00:00:53.967 --> 00:00:57.904
+This example shows an agent learning to avoid tools that have
+stopped working.
+
+15
+00:00:58.671 --> 00:01:03.858
+Expand a card to explore the problem, approach, results, and
+limitations.
+
+16
+00:01:04.258 --> 00:01:08.621
+The illustrations explain concepts; they aren't experimental
+results.
+
+17
+00:01:09.433 --> 00:01:12.358
+The deep reading button opens a compact paper list.
+
+18
+00:01:12.771 --> 00:01:17.546
+Choose one paper for individual reading, or several for joint
+analysis.
+
+19
+00:01:17.946 --> 00:01:20.033
+You decide what belongs in the collection.
+
+20
+00:01:20.838 --> 00:01:25.988
+In the reading workspace, you can upload your own PDFs, replace a
+source, or remove
+
+21
+00:01:25.988 --> 00:01:26.500
+a paper.
+
+22
+00:01:26.888 --> 00:01:30.462
+Resolve any failed material, then click Generate Report.
+
+23
+00:01:31.254 --> 00:01:35.592
+Now we're switching to a separate, previously generated English
+joint report.
+
+24
+00:01:35.992 --> 00:01:40.629
+This example brings together two papers covering seventy five
+pages.
+
+25
+00:01:41.433 --> 00:01:46.558
+The report connects their research questions and compares methods,
+results, and
+
+26
+00:01:46.558 --> 00:01:51.633
+limitations, while keeping each paper's identity and experimental
+context visible.
+
+27
+00:01:52.408 --> 00:01:57.683
+Click a citation to see the original excerpt, its paper, and its
+PDF page.
+
+28
+00:01:58.083 --> 00:02:02.833
+Automated checks help trace the evidence, but important scientific
+claims still
+
+29
+00:02:02.833 --> 00:02:03.708
+need your judgment.
+
+30
+00:02:04.517 --> 00:02:07.029
+The interface supports English and Chinese.
+
+31
+00:02:07.442 --> 00:02:12.792
+Reports can be English, Chinese, or bilingual, with interface and
+report languages
+
+32
+00:02:12.792 --> 00:02:13.942
+selected independently.
+
+33
+00:02:14.754 --> 00:02:19.867
+Our biggest lesson was turning a vague idea into clear
+requirements, then breaking
+
+34
+00:02:19.867 --> 00:02:22.517
+a large feature into manageable tasks.
+
+35
+00:02:22.904 --> 00:02:26.592
+We learned through planning, building, testing, and feedback.
+
+36
+00:02:27.392 --> 00:02:33.004
+We believe AI Radar deserves recognition because it connects
+discovery, understandable
+
+37
+00:02:33.017 --> 00:02:38.717
+explanations, and traceable evidence in one workflow, helping
+people approach unfamiliar
+
+38
+00:02:38.729 --> 00:02:40.454
+research with greater confidence.
+
+39
+00:02:41.267 --> 00:02:46.029
+With user validation, this could grow into a product with saved
+libraries, topic
+
+40
+00:02:46.029 --> 00:02:48.354
+updates, and shared team workspaces.
+
+41
+00:02:48.767 --> 00:02:53.404
+A free discovery tier and paid reading tools are possibilities to
+explore.
+
+42
+00:02:53.817 --> 00:02:57.067
+Our goal is to turn more papers into useful knowledge.
