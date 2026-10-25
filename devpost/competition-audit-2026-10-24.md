@@ -35,3 +35,7 @@ Reviewed October 24, 2026 against the [official rules](https://learn-ai-basics.d
 3. Durable saved libraries and more sources are future product hypotheses. Validate demand before expanding the prototype.
 
 Cloud hosting is deferred at the owner's request. The required public repository and accessible video are supplied. Neither more spending nor more features guarantees an award; the organizer determines eligibility and ranking.
+
+## October 25 follow-up
+
+The first presentation opportunity has been partly addressed with a [1:17 actual-interaction walkthrough](https://chuanghu07.github.io/ai-radar/#interaction-demo). It uses sampled browser captures and disclosed cuts, rather than a continuous native screen recording or fresh generation. This work also identified and fixed a second-click requirement for opening source excerpts. See [the interaction verification](interaction-verification-2026-10-25.md). Per-participant research outcomes remain uncollected.

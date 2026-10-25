@@ -33,6 +33,8 @@ flowchart TD
 
 ## Ownership and boundaries
 
+Citation navigation is shared in `frontend/src/components/evidenceNavigation.ts`, called by `LearningContent.tsx` and `DiscoveryPage.tsx`. Activating a citation opens the matching source details and any enclosing disclosure, focuses the source heading and scrolls it into view. This avoids landing on a closed excerpt. See the [October 25 interaction check](interaction-verification-2026-10-25.md).
+
 Frontend tasks cover navigation, paper selection, language controls, failure states, rendering and evidence inspection. Backend tasks cover category/date mapping, PDF limits, source identity, processing coverage, provider contracts and job safety. Both collaborators check their interface contract and integrated behavior. Keep each machine's environment and credentials local.
 
 Normal collections and reports belong to a temporary backend session. Persisted shortcuts/settings and saved developer review artifacts are different stores. Do not confuse the static public demonstration player with live model access.

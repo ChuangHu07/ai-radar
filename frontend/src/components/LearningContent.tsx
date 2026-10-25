@@ -7,6 +7,7 @@ import 'katex/dist/katex.min.css';
 import type { KnowledgeConcept } from '../api/types';
 import { researchWording } from './researchWording';
 import { useUi } from '../i18n';
+import { revealEvidence } from './evidenceNavigation';
 
 export function LearningMarkdown({ text, sectionKey }: { text: string; sectionKey: string }) {
   // Some JSON model outputs double-escape every TeX command. Decode only
@@ -15,7 +16,7 @@ export function LearningMarkdown({ text, sectionKey }: { text: string; sectionKe
     ? math : math.replace(/\\\\(?=[A-Za-z,;!{}])/g, '\\'));
   const linked = mathReady.replace(/\[(E\d{4})\]/g, (_, id: string) => `[${id}](#evidence-${sectionKey}-${id})`);
   return <div className="learning-markdown"><Markdown remarkPlugins={[remarkGfm, remarkMath]} rehypePlugins={[[rehypeKatex, { strict: 'ignore', trust: false }]]}
-    components={{ a: ({ href, children }) => href?.startsWith('#evidence-') ? <a href={href}>{children}</a> : <span>{children}</span> }} skipHtml>{linked}</Markdown></div>;
+    components={{ a: ({ href, children }) => href?.startsWith('#evidence-') ? <a href={href} onClick={revealEvidence}>{children}</a> : <span>{children}</span> }} skipHtml>{linked}</Markdown></div>;
 }
 
 export function LearningNarrative({ text, sectionKey }: { text: string; sectionKey: string }) {

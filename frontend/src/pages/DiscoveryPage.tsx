@@ -7,6 +7,7 @@ import 'katex/dist/katex.min.css';
 import { jsonPost, request, RequestError } from '../api/client';
 import type { Category, Collection, Job, OverviewJob, OverviewReport } from '../api/types';
 import { researchWording } from '../components/researchWording';
+import { revealEvidence } from '../components/evidenceNavigation';
 import { LanguageControls, useUi, errorMessage } from '../i18n';
 
 type Ranking = { status: string; auto_attempts: number; stopped: boolean; month: string | null; groups: { code: string; search_codes: string[]; count: number; official_name: string; zh_name: string }[]; error: string | null; source_url: string; source_state?: 'live' | 'bundled_verified' };
@@ -217,7 +218,7 @@ export function DiscoveryPage({ onReading }: { onReading: () => void }) {
     finally { setSaving(false); }
   }
   const markdown = (text: string, key = '', pid = '') => <ReactMarkdown skipHtml remarkPlugins={[remarkGfm, remarkMath]} rehypePlugins={[rehypeKatex]}
-    components={{ a: ({ href, children }) => href?.startsWith('#overview-') ? <a href={href}>{children}</a> : <span>{children}</span> }}>
+    components={{ a: ({ href, children }) => href?.startsWith('#overview-') ? <a href={href} onClick={revealEvidence}>{children}</a> : <span>{children}</span> }}>
       {researchWording(text, key).replace(/\[(E\d{4})\]/g, (_, id: string) => `[${id}](#overview-${pid}-${id})`)}
     </ReactMarkdown>;
   const rows = query.trim() ? categories : categories.filter(c => c.kind === 'archive');

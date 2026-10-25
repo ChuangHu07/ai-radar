@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-25",
+  "duration_seconds": 77.20833333333333,
+  "resolution": [
+    1280,
+    864
+  ],
+  "encoded_fps": 24,
+  "capture_method": "Chronological browser screenshots sampled during real UI automation; timestamp durations retained, cuts disclosed between segments; not native 24fps screen recording.",
+  "voice": "en-US-AndrewMultilingualNeural, synthetic speech",
+  "new_research_model_calls": 0,
+  "sections": [
+    {
+      "section": "intro",
+      "start": 0,
+      "duration": 6.0,
+      "capture_folder": null,
+      "capture_frames": 0,
+      "capture_time_preserved": null,
+      "ending_hold_seconds": null
+    },
+    {
+      "section": "selection",
+      "start": 6.0,
+      "duration": 20.083333333333332,
+      "capture_folder": "01-selection",
+      "capture_frames": 75,
+      "capture_time_preserved": true,
+      "ending_hold_seconds": 0.004333333333331524
+    },
+    {
+      "section": "edit",
+      "start": 26.083333333333332,
+      "duration": 12.041666666666666,
+      "capture_folder": "02-edit-collection",
+      "capture_frames": 54,
+      "capture_time_preserved": true,
+      "ending_hold_seconds": 0.0086666666666666
+    },
+    {
+      "section": "transition",
+      "start": 38.125,
+      "duration": 7.0,
+      "capture_folder": null,
+      "capture_frames": 0,
+      "capture_time_preserved": null,
+      "ending_hold_seconds": null
+    },
+    {
+      "section": "evidence",
+      "start": 45.125,
+      "duration": 25.083333333333332,
+      "capture_folder": "04-source-fixed",
+      "capture_frames": 111,
+      "capture_time_preserved": true,
+      "ending_hold_seconds": 0.022333333333332206
+    },
+    {
+      "section": "ending",
+      "start": 70.20833333333333,
+      "duration": 7.0,
+      "capture_folder": null,
+      "capture_frames": 0,
+      "capture_time_preserved": null,
+      "ending_hold_seconds": null
+    }
+  ],
+  "bytes": 2746657,
+  "sha256": "37c9f9b0e4b376048a9590c598e5afdfd2f6a6012dd16a8474eee9dee29a02be",
+  "decoded_frames": 1854,
+  "decoded_fps": 24.0,
+  "actual_duration_seconds": 77.38
+}

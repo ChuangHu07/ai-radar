@@ -6,6 +6,8 @@ AI-assisted research discovery and source-linked paper reading. Search an offici
 
 Watch [the YouTube demo](https://youtu.be/1sG9wfRfSuk), [the English demo with captions](https://chuanghu07.github.io/ai-radar/) or [download the MP4](https://raw.githubusercontent.com/ChuangHu07/ai-radar/main/demo/AI-Radar-demo-en-natural-2026-10-23.mp4). It shows the working local interface and previously generated real reports. The separate two-paper example is labeled explicitly. Generation waiting time is omitted; this is an edited application walkthrough, not a claim of live inference.
 
+A [1:17 supplementary interaction walkthrough](https://chuanghu07.github.io/ai-radar/#interaction-demo) shows actual paper selection, collection editing and one-click evidence opening. It uses timestamped browser captures of real actions with saved reports and explicitly labels the separate joint example. [Interaction check and fix](devpost/interaction-verification-2026-10-25.md).
+
 ## Review the working flow
 
 The goal is to help a reader decide what to study next and understand why. The contribution is a connected product workflow: consistent novice-first explanations, concrete scenes, a user-controlled collection, and inspectable original evidence.
