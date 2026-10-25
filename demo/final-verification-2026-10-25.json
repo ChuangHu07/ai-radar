@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 170.29166666666666,
+  "actual_duration_seconds": 170.34,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 24,
+  "decoded_frames": 4086,
+  "caption_cues": 37,
+  "sha256": "fe237d1265c431c32bc4f5bff60ac18df1e7167d939174ff9924768b1fa50256",
+  "bytes": 6933112,
+  "voice": "en-US-AndrewMultilingualNeural",
+  "disclosure": "Edited real app views plus timestamped browser frames from actual UI actions. Saved reports; separate joint example explicitly labeled. Not a native continuous recording or fresh generation.",
+  "earlier_versions_preserved": true
+}

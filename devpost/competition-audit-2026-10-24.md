@@ -39,3 +39,8 @@ Cloud hosting is deferred at the owner's request. The required public repository
 ## October 25 follow-up
 
 The first presentation opportunity has been partly addressed with a [1:17 actual-interaction walkthrough](https://chuanghu07.github.io/ai-radar/#interaction-demo). It uses sampled browser captures and disclosed cuts, rather than a continuous native screen recording or fresh generation. This work also identified and fixed a second-click requirement for opening source excerpts. See [the interaction verification](interaction-verification-2026-10-25.md). Per-participant research outcomes remain uncollected.
+
+
+## Final pre-deadline evidence
+
+The [October 25 evaluation](developer-evaluation-2026-10-25.md) adds a fresh five-paper batch and a documented same-paper baseline. The cold generation failed on a signed-number repair, prompting a bounded-retry fix and two regression tests; explicit cached recovery then succeeded. The full public-source suite now has 218 passing tests. The new [2:50 English main video](https://youtu.be/vTliRuFi2HM) integrates actual selection, editing and source-opening actions. No new external-user or measured learning outcome is claimed.

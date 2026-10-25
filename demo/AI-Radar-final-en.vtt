@@ -1,0 +1,149 @@
+WEBVTT
+
+1
+00:00:00.088 --> 00:00:05.388
+We built AI Radar because finding a paper and understanding it are two different
+
+2
+00:00:05.388 --> 00:00:06.088
+challenges.
+
+3
+00:00:06.475 --> 00:00:11.562
+Researchers need to keep up, while students entering a new field can feel lost
+
+4
+00:00:11.562 --> 00:00:12.575
+in technical language.
+
+5
+00:00:12.988 --> 00:00:14.775
+We wanted to make that first step easier.
+
+6
+00:00:15.600 --> 00:00:20.938
+The homepage keeps things simple: a central search box, saved category shortcuts,
+
+7
+00:00:21.162 --> 00:00:22.838
+and monthly submission rankings.
+
+8
+00:00:23.225 --> 00:00:26.462
+Deep reading and language settings are available at the top.
+
+9
+00:00:27.267 --> 00:00:31.029
+Search an official arXiv category by name or code.
+
+10
+00:00:31.492 --> 00:00:36.454
+For example, C S dot A I takes us straight to artificial intelligence.
+
+11
+00:00:37.254 --> 00:00:43.317
+Selecting a category retrieves up to five recent papers and generates an overview.
+
+12
+00:00:43.729 --> 00:00:48.329
+Here, we're opening a saved report, starting with the shared research context.
+
+13
+00:00:49.142 --> 00:00:53.567
+Each paper pairs a plain language explanation with a concrete illustration.
+
+14
+00:00:53.967 --> 00:00:57.904
+This example shows an agent learning to avoid tools that have stopped working.
+
+15
+00:00:58.671 --> 00:01:03.858
+Expand a card to explore the problem, approach, results, and limitations.
+
+16
+00:01:04.258 --> 00:01:08.621
+The illustrations explain concepts; they aren't experimental results.
+
+17
+00:01:09.433 --> 00:01:11.195
+Start with a saved frontier overview.
+
+18
+00:01:11.608 --> 00:01:15.395
+The top-level deep-reading button opens a compact paper list.
+
+19
+00:01:15.783 --> 00:01:18.833
+Select one paper, or add another for joint reading.
+
+20
+00:01:19.233 --> 00:01:24.221
+Opening the collection brings those papers and their PDFs into the reading workspace.
+
+21
+00:01:29.516 --> 00:01:31.504
+The collection stays editable.
+
+22
+00:01:31.904 --> 00:01:36.804
+Removing one paper changes the workspace from joint reading to single-paper reading.
+
+23
+00:01:37.216 --> 00:01:40.679
+New generation starts only when you press Generate report.
+
+24
+00:01:41.558 --> 00:01:46.871
+Now we switch to a separate saved two-paper report, not a newly generated result.
+
+25
+00:01:48.558 --> 00:01:54.258
+This report compares two papers, keeping their identities and page counts visible.
+
+26
+00:01:54.695 --> 00:01:59.645
+Follow a citation, and its original excerpt now opens immediately.
+
+27
+00:02:00.058 --> 00:02:04.821
+The paper title and physical PDF page stay attached to the evidence.
+
+28
+00:02:05.208 --> 00:02:09.071
+The source PDF remains available for checking important claims.
+
+29
+00:02:13.642 --> 00:02:16.154
+The interface supports English and Chinese.
+
+30
+00:02:16.567 --> 00:02:21.917
+Reports can be English, Chinese, or bilingual, with interface and report languages
+
+31
+00:02:21.917 --> 00:02:23.067
+selected independently.
+
+32
+00:02:23.879 --> 00:02:28.992
+Our biggest lesson was turning a vague idea into clear requirements, then breaking
+
+33
+00:02:28.992 --> 00:02:31.642
+a large feature into manageable tasks.
+
+34
+00:02:32.029 --> 00:02:35.717
+We learned through planning, building, testing, and feedback.
+
+35
+00:02:36.517 --> 00:02:42.129
+We believe AI Radar deserves recognition because it connects discovery, understandable
+
+36
+00:02:42.142 --> 00:02:47.842
+explanations, and traceable evidence in one workflow, helping people approach unfamiliar
+
+37
+00:02:47.854 --> 00:02:49.579
+research with greater confidence.

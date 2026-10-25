@@ -36,9 +36,11 @@ Formula rendering, unreliable source-number matches and mistaken model-review fi
 
 ## Validation and limitations
 
-The demo shows real application views and previously generated reports. It explicitly identifies the separate two-paper joint-reading example; it is an edited walkthrough, not a fresh uninterrupted generation. Narration is neural synthetic speech with English captions. A [1:17 supplementary interaction walkthrough](https://chuanghu07.github.io/ai-radar/#interaction-demo) now shows actual paper selection, collection editing and source-excerpt opening using timestamped browser captures. It clearly labels the separate saved joint report. During this check, we improved citation activation so the excerpt opens immediately instead of requiring a second click.
+The final 2:50 English demo combines real application views with actual paper-selection, collection-editing and source-opening actions, using previously generated reports. It explicitly identifies the separate two-paper joint-reading example; it is an edited walkthrough, not a fresh uninterrupted generation. Narration is neural synthetic speech with English captions. A [1:17 supplementary interaction walkthrough](https://chuanghu07.github.io/ai-radar/#interaction-demo) now shows actual paper selection, collection editing and source-excerpt opening using timestamped browser captures. It clearly labels the separate saved joint report. During this check, we improved citation activation so the excerpt opens immediately instead of requiring a second click.
 
-The public source was checked again on Windows on October 24: all 216 backend tests passed, and the production frontend build succeeded. Tests use synthetic fixtures and mocked calls and are separate from scientific validation. We received informal hands-on feedback involving one team member and several non-team users. According to the owner's retrospective account, all operated the software. Early feedback called for faster overview scanning and less mechanical deep-reading reports; we added visual explanations and revised the report framework, generation constraints, format and length. The reported final-version feedback was positive about the usefulness of the content/framework for research and the illustrations as concise summaries.
+An October 25 developer-operated check fetched five new cs.AI papers covering 137 pages. The first generation uncovered a signed-number repair edge case; we fixed the bounded retry and added two regression tests. Explicit recovery of the same frozen batch then produced all five cards and concept illustrations. A same-model, same-PDF direct-chat baseline also produced a useful explanation. Our [evaluation record](https://github.com/ChuangHu07/ai-radar/blob/main/devpost/developer-evaluation-2026-10-25.md) reports failures, latency and comparison limits; it does not claim superior comprehension or replace external-user testing.
+
+The public source was checked again on Windows on October 25: all 218 backend tests passed, and the production frontend build succeeded. Tests use synthetic fixtures and mocked calls and are separate from scientific validation. We received informal hands-on feedback involving one team member and several non-team users. According to the owner's retrospective account, all operated the software. Early feedback called for faster overview scanning and less mechanical deep-reading reports; we added visual explanations and revised the report framework, generation constraints, format and length. The reported final-version feedback was positive about the usefulness of the content/framework for research and the illustrations as concise summaries.
 
 This is qualitative feedback from a mixed team/non-team group, not a controlled study. The exact external participant count, session dates, backgrounds and individual outcomes were not recorded. We do not claim measured time savings, learning gains or universal model accuracy.
 
@@ -54,9 +56,9 @@ Use the documented feedback to guide further refinement, and collect structured 
 
 ## Project links
 
-**Video guide:** [0:38 overview](https://www.youtube.com/watch?v=1sG9wfRfSuk&t=38s) · [1:10 paper selection](https://www.youtube.com/watch?v=1sG9wfRfSuk&t=70s) · [1:53 source evidence](https://www.youtube.com/watch?v=1sG9wfRfSuk&t=113s) · [2:15 what we learned](https://www.youtube.com/watch?v=1sG9wfRfSuk&t=135s).
+**Video guide:** [0:37 overview](https://www.youtube.com/watch?v=vTliRuFi2HM&t=37s) · [1:09 paper selection](https://www.youtube.com/watch?v=vTliRuFi2HM&t=69s) · [1:48 source evidence](https://www.youtube.com/watch?v=vTliRuFi2HM&t=108s) · [2:23 what we learned](https://www.youtube.com/watch?v=vTliRuFi2HM&t=143s).
 
-- English demo: https://youtu.be/1sG9wfRfSuk
+- English demo: https://youtu.be/vTliRuFi2HM
 - Public source and MIT license: https://github.com/ChuangHu07/ai-radar
 - English scope, PRD and technical specification: https://github.com/ChuangHu07/ai-radar/tree/main/devpost
 - Feedback record and validation protocol: https://github.com/ChuangHu07/ai-radar/blob/main/devpost/user-validation.md

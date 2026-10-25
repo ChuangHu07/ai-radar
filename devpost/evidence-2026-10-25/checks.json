@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-25",
+  "paper_count": 5,
+  "papers": [
+    {
+      "paper_id": "2610.31667",
+      "covered_pages": 48,
+      "evidence_count": 106,
+      "fixed_fields_present": true,
+      "concept_visual_present": true
+    },
+    {
+      "paper_id": "2610.31657",
+      "covered_pages": 9,
+      "evidence_count": 19,
+      "fixed_fields_present": true,
+      "concept_visual_present": true
+    },
+    {
+      "paper_id": "2610.31656",
+      "covered_pages": 27,
+      "evidence_count": 49,
+      "fixed_fields_present": true,
+      "concept_visual_present": true
+    },
+    {
+      "paper_id": "2610.31650",
+      "covered_pages": 29,
+      "evidence_count": 47,
+      "fixed_fields_present": true,
+      "concept_visual_present": true
+    },
+    {
+      "paper_id": "2610.31646",
+      "covered_pages": 24,
+      "evidence_count": 58,
+      "fixed_fields_present": true,
+      "concept_visual_present": true
+    }
+  ],
+  "note": "Coverage of extractable text and working citations does not certify scientific correctness."
+}

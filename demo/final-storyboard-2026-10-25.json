@@ -1,0 +1,93 @@
+[
+  {
+    "start": 0,
+    "duration": 15.5,
+    "kind": "old",
+    "source_section": 0,
+    "label": "Why we built AI Radar"
+  },
+  {
+    "start": 15.5,
+    "duration": 11.666666666666666,
+    "kind": "old",
+    "source_section": 1,
+    "label": "A clear place to start"
+  },
+  {
+    "start": 27.166666666666664,
+    "duration": 10.0,
+    "kind": "old",
+    "source_section": 2,
+    "label": "Find your research field"
+  },
+  {
+    "start": 37.166666666666664,
+    "duration": 11.875,
+    "kind": "old",
+    "source_section": 3,
+    "label": "See the bigger picture"
+  },
+  {
+    "start": 49.041666666666664,
+    "duration": 9.541666666666666,
+    "kind": "old",
+    "source_section": 4,
+    "label": "Understand the problem first"
+  },
+  {
+    "start": 58.58333333333333,
+    "duration": 10.75,
+    "kind": "old",
+    "source_section": 5,
+    "label": "Go deeper when you want to"
+  },
+  {
+    "start": 69.33333333333333,
+    "duration": 20.083333333333332,
+    "kind": "action",
+    "source_section": "selection",
+    "label": "selection"
+  },
+  {
+    "start": 89.41666666666666,
+    "duration": 12.041666666666666,
+    "kind": "action",
+    "source_section": "edit",
+    "label": "edit"
+  },
+  {
+    "start": 101.45833333333333,
+    "duration": 7.0,
+    "kind": "action",
+    "source_section": "transition",
+    "label": "transition"
+  },
+  {
+    "start": 108.45833333333333,
+    "duration": 25.083333333333332,
+    "kind": "action",
+    "source_section": "evidence",
+    "label": "evidence"
+  },
+  {
+    "start": 133.54166666666666,
+    "duration": 10.25,
+    "kind": "old",
+    "source_section": 11,
+    "label": "Choose how you read"
+  },
+  {
+    "start": 143.79166666666666,
+    "duration": 12.625,
+    "kind": "old",
+    "source_section": 12,
+    "label": "What we learned"
+  },
+  {
+    "start": 156.41666666666666,
+    "duration": 13.875,
+    "kind": "old",
+    "source_section": 13,
+    "label": "Why this project deserves recognition"
+  }
+]

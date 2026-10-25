@@ -661,15 +661,26 @@ async def generate_overview(papers, usage, on_phase, cache=None, on_artifact=Non
                         '\n程序核对问题：' + rejected['error']['details'] +
                         '\n只修订 ' + target_field + '：为条件、数值及比较对象补齐实际支持它们的已有证据编号，'
                         '尤其不能漏掉 key_results.setting 所引证据。没有可靠来源则删除该从句；不得从别处借同值数字。'
+                        '原文的带符号数值必须保留符号，例如原文 -45.3 应写“变化为 -45.3 个百分点”，不能改成无符号数字。'
                         '问题背景不能把模型中的百分比当成临床患者测量。'
                         '其余九个字段必须为 null；返回完整 JSON schema，不返回 XML。')
-                    patch = await formatted('S3', [{'role': 'user', 'content': repair_text}], CardPatch, pid,
-                        attempt=attempt+1, extra_system='\n本次为定点修订：使用 JSON schema，只改 ' + target_field + '，其余字段为 null。')
-                    candidate = merge_card_patch(draft, patch, {target_field}, evidence)
-                    validate_result_scope(candidate, fact)
-                    validate_card_claims(candidate, fact)
-                    cards[pid] = candidate
-                    save('S3-' + target_field + '-repair-' + pid.replace('/', '-'), {'before': draft, 'after': candidate})
+                    for patch_attempt in range(2):
+                        patch = await formatted('S3', [{'role': 'user', 'content': repair_text}], CardPatch, pid,
+                            attempt=attempt+1+patch_attempt, extra_system='\n本次为定点修订：使用 JSON schema，只改 ' + target_field + '，其余字段为 null。')
+                        try:
+                            candidate = merge_card_patch(draft, patch, {target_field}, evidence)
+                            validate_result_scope(candidate, fact)
+                            validate_card_claims(candidate, fact)
+                        except AppError as exc:
+                            save('S3-field-rejected-' + pid.replace('/', '-') + '-' + str(patch_attempt+1),
+                                 {'error': exc.payload(), 'patch': patch})
+                            if patch_attempt == 1:
+                                raise
+                            repair_text += '\n上次定点修订仍未通过：' + exc.message + '\n被拒绝修订：' + json.dumps(patch, ensure_ascii=False) + '\n严格保留原文数值的正负号，不增加新结果。'
+                        else:
+                            cards[pid] = candidate
+                            save('S3-' + target_field + '-repair-' + pid.replace('/', '-'), {'before': draft, 'after': candidate})
+                            break
                     break
                 request_text = text if attempt == 0 else text + (
                     '\n上次卡片未通过程序的引用或数字核对：' + failure +

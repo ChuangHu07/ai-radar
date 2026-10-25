@@ -1,0 +1,52 @@
+[
+  {
+    "paper_id": "2610.31667",
+    "arxiv_id": "2610.31667v1",
+    "title": "Direct Pass@$k$ Optimization for Thought Pruning: Balancing Quality and Diversity in Test-Time Reasoning",
+    "source_url": "https://arxiv.org/abs/2610.31667v1",
+    "published_at": "2026-10-22T17:59:48Z",
+    "sha256": "77a829330ee555a5652e87a0c5473344b974499251c33e9001c64a5404dc55b0",
+    "pages": 48,
+    "basis": "full_pdf"
+  },
+  {
+    "paper_id": "2610.31657",
+    "arxiv_id": "2610.31657v1",
+    "title": "Cost-Aware Abstention for LLM-Based IT Ticket Classification",
+    "source_url": "https://arxiv.org/abs/2610.31657v1",
+    "published_at": "2026-10-22T17:58:52Z",
+    "sha256": "6e1eb45d419a39c321840c69482bada39fde6d29d8bdf5da9e1481503410461a",
+    "pages": 9,
+    "basis": "full_pdf"
+  },
+  {
+    "paper_id": "2610.31656",
+    "arxiv_id": "2610.31656v1",
+    "title": "METTA: Memory-Enhanced Test-Time Adaptation for Meta-Reinforcement Learning",
+    "source_url": "https://arxiv.org/abs/2610.31656v1",
+    "published_at": "2026-10-22T17:58:27Z",
+    "sha256": "ae66389fa817fe5606a5b3eccaeeac98c896d298bf306322fcea0b1cdd4496c8",
+    "pages": 27,
+    "basis": "full_pdf"
+  },
+  {
+    "paper_id": "2610.31650",
+    "arxiv_id": "2610.31650v1",
+    "title": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
+    "source_url": "https://arxiv.org/abs/2610.31650v1",
+    "published_at": "2026-10-22T17:57:04Z",
+    "sha256": "f0f7cec7e46370465d469830b41ef8d7dbb42c91eda9138784baee1750d3b6a8",
+    "pages": 29,
+    "basis": "full_pdf"
+  },
+  {
+    "paper_id": "2610.31646",
+    "arxiv_id": "2610.31646v1",
+    "title": "Low-Bit N-Gram Embeddings for Language Models",
+    "source_url": "https://arxiv.org/abs/2610.31646v1",
+    "published_at": "2026-10-22T17:56:13Z",
+    "sha256": "ed86f35e85da6605201b72d458aff139c905a7a725d4e7f57485ae5f18d39291",
+    "pages": 24,
+    "basis": "full_pdf"
+  }
+]

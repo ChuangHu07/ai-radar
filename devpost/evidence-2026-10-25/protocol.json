@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-25T15:18:53.909674+00:00",
+  "operator": "developer/AI-assisted",
+  "external_participants": 0,
+  "selection": "first five cs.AI papers returned by the production official client at frozen UTC cutoff",
+  "baseline_prompt": "Explain this research paper to a student who is new to its field. In Chinese, explain the problem, how the method works, the main findings, why they matter, and the limitations. Place the paper within its broader research area before narrowing to its contribution. Use a concrete example if helpful. Distinguish teaching examples from actual results. Cite PDF page numbers for important claims. Aim for 500-800 Chinese characters, but prioritize a complete and accurate explanation. Do not invent results.",
+  "baseline_model": "qwen3.8-flash",
+  "baseline_source": "same first ready full PDF bytes; no app evidence packet",
+  "baseline_calls": 1,
+  "app_path": "production generate_overview with an empty stage cache; normal internal bounded repair",
+  "budget_reserve_cny": 15,
+  "criteria": [
+    "valid source identity and full-page coverage",
+    "fixed section structure",
+    "source-linked claims",
+    "plain-language problem and approach",
+    "concrete example with teaching/result boundary"
+  ],
+  "limits": [
+    "not blinded",
+    "no human comprehension or time-saving measurements",
+    "different generation pipelines and token budgets",
+    "no repeated runs or broad scientific accuracy estimate"
+  ],
+  "metadata_cutoff_note": "Original first-attempt cutoff restored from the recorded console protocol inspection; the retry reuses the exact frozen metadata and PDFs. No new search took place."
+}

@@ -9,7 +9,7 @@ Reviewed October 24, 2026 against the published [official rules](https://learn-a
 | New working project built during the submission period with the Devpost Learn Skill Pack | Scope, PRD, specification, source and team explanation | The organizer makes the final eligibility determination |
 | Planning files in the repository | [scope.md](scope.md), [prd.md](prd.md), [spec.md](spec.md) | Current English consolidations of the approved decisions; historical versions remain in Git history |
 | Public source with setup instructions and a complete open-source license | [Repository](https://github.com/ChuangHu07/ai-radar), English README, [MIT License](../LICENSE) | Third-party dependencies retain their own licenses |
-| A short working demonstration | [English YouTube video](https://youtu.be/1sG9wfRfSuk), 2:58 | Edited real application views and saved reports; the separate joint example is disclosed |
+| A short working demonstration | [English YouTube video](https://youtu.be/vTliRuFi2HM), 2:50 | Edited real application views and saved reports; the separate joint example is disclosed |
 | English project description and testing instructions | English Devpost story, README, and current planning/evidence documents | UI/report localization and code prompt text are part of the software, not claims that every report is written in English |
 | Team and additional-info fields | Existing submission 1207755, two recorded team members, owner-supplied survey answers | Age, eligibility and terms confirmed by the owner before submission |
 | Submitted entry | [AI Radar on Devpost](https://devpost.com/software/ai101), SUBMITTED / 5/5 | Save edits to this entry; do not create a duplicate project |

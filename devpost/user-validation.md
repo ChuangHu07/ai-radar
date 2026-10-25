@@ -73,3 +73,8 @@ A completed report should state the actual date, participant count/background, t
 ## Current conclusion
 
 The record supports a qualitative feedback-driven design history, with owner-reported hands-on involvement from both team and non-team users and favorable feedback on the later version. It does **not establish quantified time savings, improved comprehension, scientific accuracy, task success rates or market demand**. Exact participant counts and per-user attribution remain unknown. The optional protocol above is future work and must not be presented as a procedure used for these past sessions.
+
+
+## October 25 developer checks — separate evidence
+
+No new external users were recruited. The [October 25 developer evaluation](developer-evaluation-2026-10-25.md) records a fresh five-paper acquisition (137 pages), a signed-number repair failure and its explicit cached recovery, a same-model/same-PDF direct-chat comparison, and task-based checks in the actual frontend. These checks do not measure human comprehension, time savings or market demand. The original retrospective feedback is unchanged.

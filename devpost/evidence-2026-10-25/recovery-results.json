@@ -1,0 +1,21 @@
+{
+  "status": "succeeded",
+  "seconds": 266.563,
+  "usage": {
+    "budget_limit_cny": 10.0,
+    "budget_accounted_cny": 0.1656647,
+    "budget_reserved_cny": 0.0,
+    "unknown_usage_calls": 0,
+    "attempted_calls": 18,
+    "input_tokens": 153172,
+    "output_tokens": 15973,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 29696,
+    "pdf_parsed_pages": 0,
+    "estimated_cost_cny": 0.1656647,
+    "calls": 18
+  },
+  "calls": 18,
+  "accounted_cny": "0.1656647",
+  "reused": "five exact-hash full-page source packs, accepted facts, original batch map and three validated cards; rejected fourth card repaired; remaining card generated"
+}

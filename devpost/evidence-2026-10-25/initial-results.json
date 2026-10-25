@@ -1,0 +1,60 @@
+{
+  "metadata": {
+    "status": "succeeded",
+    "count": 5,
+    "seconds": 1.015
+  },
+  "overview": {
+    "status": "failed",
+    "code": "MODEL_OUTPUT_INVALID",
+    "message": "速览结果数字未在该栏引用的原文中核对：45.3",
+    "seconds": 740.375,
+    "usage": {
+      "budget_limit_cny": 15.0,
+      "budget_accounted_cny": 0.4449362,
+      "budget_reserved_cny": 0.0,
+      "unknown_usage_calls": 0,
+      "attempted_calls": 31,
+      "input_tokens": 390910,
+      "output_tokens": 48966,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 95488,
+      "pdf_parsed_pages": 0,
+      "estimated_cost_cny": 0.4449362,
+      "calls": 31
+    },
+    "message_en": "A result number could not be verified in the original text cited by that field: 45.3."
+  },
+  "baseline": {
+    "status": "succeeded",
+    "paper_id": "2610.31667",
+    "sha256": "77a829330ee555a5652e87a0c5473344b974499251c33e9001c64a5404dc55b0",
+    "seconds": 92.844,
+    "usage": {
+      "budget_limit_cny": 15.0,
+      "budget_accounted_cny": 1.1080054,
+      "budget_reserved_cny": 0.0,
+      "unknown_usage_calls": 0,
+      "attempted_calls": 1,
+      "input_tokens": 183056,
+      "output_tokens": 578,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "pdf_parsed_pages": 48,
+      "estimated_cost_cny": 1.1080054,
+      "calls": 1
+    },
+    "characters": 1049
+  },
+  "budget": {
+    "calls": 1,
+    "accounted_cny": "1.1080054",
+    "unknown_calls": 0
+  },
+  "resume_note": "Attempt 1 stopped before any app model call because the Windows console could not encode a Chinese progress label. UTF-8 logging fixed in evaluation harness; production app code unchanged. Frozen source PDFs and prior baseline retained.",
+  "app_retry_budget": {
+    "calls": 31,
+    "accounted_cny": "0.4449362",
+    "unknown_calls": 0
+  }
+}
