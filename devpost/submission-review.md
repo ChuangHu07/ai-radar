@@ -38,3 +38,7 @@ The current submission incorporates this evidence without requiring new cloud de
 ## Final competition review
 
 The [October 24 review](competition-audit-2026-10-24.md) maps the four judging criteria to visible evidence and records a new public-source verification: 216 backend tests passed and the production frontend build succeeded. The entry now includes a concrete explanation of the workflow contribution and video timestamps. Remaining evidence opportunities are disclosed rather than treated as completed studies.
+
+## Final current-rules check — October 25
+
+See [the final submission check](final-requirements-check-2026-10-25.md) for the current public-video, English-language, anonymous-repository and saved-form verification. The final main video is approximately 2:50; the latest regression result is 218 passing tests. Earlier dated checks above remain historical records.
