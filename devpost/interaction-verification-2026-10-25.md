@@ -31,3 +31,7 @@ Capture uses sequential browser screenshots sampled during actual UI automation,
 These developer actions add evidence that the controls work. They are not additional external users, satisfaction ratings, time-saving measurements or independent validation. The [actual feedback record](user-feedback-2026-10-24.md) and its stated unknowns remain unchanged.
 
 The final video is approximately **1:17**, 1280 × 864, with 1,854 decoded frames at 24 fps and English captions. It contains 240 sampled browser frames across the three interaction segments. Full decoding and visual checks of six timeline points completed before publication. [Watch the supplementary video](https://chuanghu07.github.io/ai-radar/#interaction-demo).
+
+## Public player follow-up
+
+The demonstration page pauses the other video when either player starts. Browser checks confirmed both directions: starting a main-demo chapter paused the supplementary video, and starting the supplementary video paused the main demo. This prevents overlapping narration while retaining each video's playback position.
