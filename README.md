@@ -6,6 +6,20 @@ AI-assisted research discovery and source-linked paper reading. Search an offici
 
 Watch [the YouTube demo](https://youtu.be/1sG9wfRfSuk), [the English demo with captions](https://chuanghu07.github.io/ai-radar/) or [download the MP4](https://raw.githubusercontent.com/ChuangHu07/ai-radar/main/demo/AI-Radar-demo-en-natural-2026-10-23.mp4). It shows the working local interface and previously generated real reports. The separate two-paper example is labeled explicitly. Generation waiting time is omitted; this is an edited application walkthrough, not a claim of live inference.
 
+## Review the working flow
+
+The goal is to help a reader decide what to study next and understand why. The contribution is a connected product workflow: consistent novice-first explanations, concrete scenes, a user-controlled collection, and inspectable original evidence.
+
+| In the 2:58 demo | What to look for |
+|---|---|
+| [0:38 Overview](https://www.youtube.com/watch?v=1sG9wfRfSuk&t=38s) | Shared context, a concrete tool-failure explanation, then technical details |
+| [1:10 Select and edit](https://www.youtube.com/watch?v=1sG9wfRfSuk&t=70s) | Choose one or several papers; add, replace or remove PDFs |
+| [1:32 Joint reading](https://www.youtube.com/watch?v=1sG9wfRfSuk&t=92s) | A separately identified saved two-paper report |
+| [1:53 Evidence](https://www.youtube.com/watch?v=1sG9wfRfSuk&t=113s) | Original excerpt, paper identity and physical PDF page |
+| [2:15 Learning](https://www.youtube.com/watch?v=1sG9wfRfSuk&t=135s) | Turning a vague idea into requirements and small tasks |
+
+See the [dated review and verification record](devpost/competition-audit-2026-10-24.md) and [actual feedback](devpost/user-feedback-2026-10-24.md).
+
 ## Features
 
 - Official arXiv categories and exact subcategory search, such as `cs.AI`.
@@ -51,9 +65,9 @@ Before starting, edit `.env` locally with your own provider key and contact emai
 
 ## Development and checks
 
-Run `python -m pytest tests -q` inside the virtual environment, and `npm run build` inside `frontend/`. For separate frontend development, `npm run dev` proxies API calls to port 8000.
+Run `python -m pytest tests -q` inside the virtual environment, and `npm run build` inside `frontend/`. If Windows denies access to an existing system pytest temporary directory, use a new project-local path, for example `python -m pytest tests -q --basetemp=.local-data/pytest-check-20261024`. Choose an unused path: pytest clears the specified base directory. For separate frontend development, `npm run dev` proxies API calls to port 8000.
 
-The current source passed 216 backend tests and the production frontend build on Windows on 2026-10-18. Tests use synthetic fixtures and mocked model calls, not scientific validation of generated research claims. The build reports a non-blocking bundle-size warning.
+The public source was rechecked on Windows on 2026-10-24: 216 backend tests passed in 6.88 seconds, and the production frontend build succeeded. Tests use synthetic fixtures and mocked model calls, not scientific validation of generated research claims. The build reports a non-blocking bundle-size warning.
 
 ## Architecture
 

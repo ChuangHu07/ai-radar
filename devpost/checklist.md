@@ -13,8 +13,8 @@ Updated October 24, 2026. This is a current delivery record, not a retrospective
 | Paper picker and source excerpts/PDF pages | Implemented; shown in English demo | A source link is not proof of scientific entailment |
 | Category shortcuts and official monthly counts | Implemented; mapping, retry and persistence checks recorded | Counts are archive submissions, with actual month |
 | Concept scenes | Reviewed sample scenes plus grounded generation path implemented | Illustrations are explanatory, can be omitted on failure, and are not measured results |
-| Backend automated checks | 216 passed in the recorded October 18 Windows run | Mocked/synthetic tests, not a scientific-accuracy benchmark; not rerun for this documentation update |
-| Frontend build | Production build passed in the recorded October 18 run | Nonblocking bundle-size warning remained |
+| Backend automated checks | 216 passed in the October 24 public-source Windows rerun | Mocked/synthetic tests, not a scientific-accuracy benchmark |
+| Frontend build | Public-source production build passed again October 24 | Nonblocking bundle-size warning remained |
 | Windows operation | Local demonstration and first-party acceptance recorded | Requires valid provider configuration for new generation |
 | macOS operation | Setup/design supplied | Hardware execution optional and not completed |
 | Project map and learning wrap-up | Completed through an evidence-based explanation and code map | No claim that generated notes prove individual code mastery |
