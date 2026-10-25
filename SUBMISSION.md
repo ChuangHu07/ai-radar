@@ -30,7 +30,7 @@ Formula rendering, unreliable source-number matches and mistaken model-review fi
 
 The demo shows real application views and previously generated reports. It explicitly identifies the separate two-paper joint-reading example; it is an edited walkthrough, not a fresh uninterrupted generation. Narration is neural synthetic speech with English captions.
 
-Recorded Windows verification passed 216 backend tests and the production frontend build on October 18. Tests use synthetic fixtures and mocked calls and are separate from scientific validation. The current evidence includes first-party team feedback; independent participant testing has not yet been completed. We do not claim measured time savings, learning gains or universal model accuracy.
+Recorded Windows verification passed 216 backend tests and the production frontend build on October 18. Tests use synthetic fixtures and mocked calls and are separate from scientific validation. The current evidence includes first-party team feedback; additional real feedback is reported by the owner but participant context and observations have not yet been documented here. We do not claim measured time savings, learning gains or universal model accuracy.
 
 New generation requires local setup and a valid provider key. Normal sessions are temporary; scanned PDFs/OCR and production multi-user hosting are not supported. PDFs are limited to 50 MiB and 150 pages each. macOS instructions are supplied, but hardware validation remains optional and unperformed. The public demo page hosts the video, not a live AI service.
 
@@ -40,7 +40,7 @@ Building AI Radar taught us how to describe requirements precisely and understan
 
 ## Next steps
 
-Conduct independent comprehension/usability sessions and record actual outcomes before making impact claims. Website integration is under discussion; it has not been deployed. Saved libraries, topic updates and shared workspaces are possible later features requiring user validation.
+Document the existing feedback reported by the owner, with anonymous context and actual observations, before making broader impact claims. Additional independent sessions are optional follow-up work. Cloud deployment and personal-website integration are deferred so the current submission can focus on the working prototype and evidence. Saved libraries, topic updates and shared workspaces are possible later features requiring user validation.
 
 ## Project links
 
@@ -48,3 +48,5 @@ Conduct independent comprehension/usability sessions and record actual outcomes 
 - Public source and MIT license: https://github.com/ChuangHu07/ai-radar
 - English scope, PRD and technical specification: https://github.com/ChuangHu07/ai-radar/tree/main/devpost
 - Validation protocol and first-party evidence: https://github.com/ChuangHu07/ai-radar/blob/main/devpost/user-validation.md
+
+- Submission requirements review: https://github.com/ChuangHu07/ai-radar/blob/main/devpost/submission-review.md

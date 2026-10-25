@@ -166,7 +166,7 @@ One teammate can own frontend flow/state/localization and the other source acqui
 
 ## 8. Verification and limitations
 
-The recorded October 18 Windows checks passed 216 backend tests and the frontend production build, with a nonblocking bundle-size warning. This is historical evidence, not a claim of a new run today. Mocked tests do not prove model quality, live provider availability, or time saved. Real saved samples and first-party feedback are documented separately. macOS hardware verification and independent participant testing are not completed.
+The recorded October 18 Windows checks passed 216 backend tests and the frontend production build, with a nonblocking bundle-size warning. This is historical evidence, not a claim of a new run today. Mocked tests do not prove model quality, live provider availability, or time saved. Real saved samples and first-party feedback are documented separately. macOS hardware verification remains unperformed. Additional owner-reported feedback has not yet been documented with participant context and observations.
 
 Test boundaries include zero/few results, malformed/unavailable sources, abstract decisions, PDF limits, collection revisions, ten-paper limits, cancellation/retry, source/number checks, ranking mapping/retry stop, and language preservation. Inspect report math and evidence manually; neither a model review label nor test count certifies scientific accuracy.
 
@@ -182,4 +182,4 @@ No production authentication, per-user isolation, distributed queue, public mode
 
 Credentials, personal learner profile, source PDFs, private saved reports, ledgers, and private development Git history are excluded from publication. Historical Chinese planning remains recoverable in prior Git revisions; current public planning is consolidated in English.
 
-A website can immediately link to or embed the existing video without running AI inference. Live in-site use needs a reachable backend, HTTPS/origin configuration, appropriate user/session isolation, upload handling, spend controls, and a decision on data retention. The exact integration is pending the owner's website details; no live integration is claimed here.
+A website can immediately link to or embed the existing video without running AI inference. Live in-site use needs a reachable backend, HTTPS/origin configuration, appropriate user/session isolation, upload handling, spend controls, and a decision on data retention. The owner has deferred website/cloud integration to prioritize the submission and feedback documentation. No live integration is claimed or required as a new artifact for this revision.

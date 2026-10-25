@@ -135,8 +135,8 @@ File limits are 50 MiB and 150 pages per PDF. Text extraction and material readi
 
 The source and team acceptance records cover normal discovery/reading flows, mixed collections, failure recovery, category shortcuts/rankings, English UI, and three report languages. Specific samples and limits are summarized in [checklist.md](checklist.md). Do not treat the existence of a requirement, a checkbox, a unit test, or a saved screenshot as proof of independent user benefit.
 
-Independent user validation is being prepared separately. Its goals are comprehension, navigation, and evidence inspection. No participant count, time saving, accuracy gain, or success rate is reported without an actual recorded observation.
+Feedback documentation and an optional independent validation protocol are maintained separately. The optional protocol focuses on comprehension, navigation, and evidence inspection. No participant count, time saving, accuracy gain, or success rate is reported without an actual recorded observation.
 
 ## 10. Out of scope and website follow-up
 
-No OCR, automatic clusters, multi-provider discovery, accounts, production hosting, subscriptions, saved libraries, or personalized curriculum is included. Website integration is a post-submission request whose architecture depends on the user's site. A public demo player is already available; it must not be described as a deployed inference service.
+No OCR, automatic clusters, multi-provider discovery, accounts, production hosting, subscriptions, saved libraries, or personalized curriculum is included. Website integration and cloud hosting are deferred at the owner's request; they are not a blocker for this submission revision. A public demo player is already available; it must not be described as a deployed inference service.

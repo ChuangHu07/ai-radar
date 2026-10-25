@@ -1,6 +1,6 @@
 # AI Radar — User Validation and Evidence Status
 
-Updated October 24, 2026. **Independent participant sessions recorded in this release: zero.** A study protocol is prepared below. Do not describe planned sessions as completed, or team acceptance as an independent user study.
+Updated October 24, 2026. **Documented independent participant records in this release: zero.** This is a documentation count, not a claim that no sessions occurred. The owner reports that actual feedback already exists; participant context and observations have not yet been provided for this record. A study protocol is also available below. Do not describe planned sessions as completed, or team acceptance as an independent user study.
 
 ## Existing evidence: first-party formative feedback
 
@@ -17,7 +17,11 @@ The project owner is a member of the two-person development team and also tried 
 
 The owner's stated learning outcome was clarifying an initially vague idea, describing requirements precisely, and decomposing a large feature into manageable parts. It is a self-report, not a formal skills assessment.
 
-## Independent study protocol — pending
+## Additional owner-reported feedback — details pending
+
+On October 24, the owner stated that actual feedback already exists and requested help recording it in English. We have requested anonymous participant context, whether they used the app or viewed saved material, the actual observations, and approximate date/version if known. Independence, participant count, task outcomes and quotations are not assumed. No retroactive scores or timing measurements will be invented. The documented first-party feedback above remains valid.
+
+## Optional further independent study protocol
 
 ### Goal and participants
 
@@ -62,4 +66,4 @@ A completed report should state the actual date, participant count/background, t
 
 ## Current conclusion
 
-The available evidence shows repeated first-party feedback and iterative fixes. It does **not yet demonstrate independent usability success, quantified time savings, improved comprehension, scientific accuracy, or willingness to pay**. Update this section only after actual sessions.
+The available evidence shows repeated first-party feedback and iterative fixes. It does **not yet demonstrate independent usability success, quantified time savings, improved comprehension, scientific accuracy, or willingness to pay**. Update this section when the owner supplies the actual feedback record or additional sessions are observed; do not infer that unrecorded feedback did not happen.
