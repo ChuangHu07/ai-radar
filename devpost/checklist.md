@@ -21,7 +21,7 @@ Updated October 24, 2026. This is a current delivery record, not a retrospective
 | Public source and license | Published; MIT License | Credentials, original source PDFs, private reports and learner profile excluded |
 | English video | Published on YouTube, 2:58, captions and synthetic narration | Edited real views and saved reports; separate joint example disclosed |
 | Devpost submission | Submitted October 24; submission 1207755 | Submission confirmation is not an eligibility/winner decision |
-| Independent user validation | Protocol prepared; owner reports existing feedback, details not yet documented | Team feedback is labeled first-party |
+| Hands-on user feedback | Retrospective owner account recorded: one team member and several non-team users | Exact count/dates and individual outcomes unknown; qualitative, not controlled validation |
 | Personal website integration | Deferred at owner's request | No hosted live AI service claimed |
 
 ## Public evidence
@@ -36,9 +36,10 @@ Updated October 24, 2026. This is a current delivery record, not a retrospective
 
 ## Follow-up checklist
 
-- [ ] Document the actual feedback the owner reports already exists; record unknowns honestly.
+- [x] Record the owner-supplied hands-on feedback in English and mark unknowns.
 - [ ] Optional later work: conduct additional independent sessions if useful.
-- [ ] Report the number of actual participants, task outcomes, quotations with permission, and limitations.
+- [x] Disclose the participant-count uncertainty, mixed team/non-team context and qualitative limits.
+- [ ] Optional later work: capture per-participant task outcomes with consent in future sessions.
 - [ ] Optional later work: agree website integration architecture if the owner resumes deployment.
 - [ ] If live hosting is chosen, verify isolation, HTTPS, uploads, retention and usage controls before public access.
 

@@ -68,7 +68,7 @@ The submitted source has run/setup instructions, dependency locks, tests, and th
 
 Accounts, durable research libraries, cross-session report history, topic alerts, shared team workspaces, hosted multi-user operation, OCR, more paper providers, citation-based discovery, automatic paper clustering, personalized researcher profiles, and research-design advice are outside this proof of concept.
 
-Website integration was considered after the initial submission and is now deferred at the owner's request. The owner reports existing user feedback whose details are awaiting documentation; do not confuse unrecorded feedback with an absence of testing or claim an independent study result without evidence.
+Website integration was considered after the initial submission and is now deferred at the owner's request. The owner's retrospective hands-on feedback is documented separately, including one team member and several non-team users. It is qualitative feedback with unknown exact count/dates, not a controlled independent study.
 
 ## Team learning and division of work
 

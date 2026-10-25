@@ -1,6 +1,6 @@
 # AI Radar — User Validation and Evidence Status
 
-Updated October 24, 2026. **Documented independent participant records in this release: zero.** This is a documentation count, not a claim that no sessions occurred. The owner reports that actual feedback already exists; participant context and observations have not yet been provided for this record. A study protocol is also available below. Do not describe planned sessions as completed, or team acceptance as an independent user study.
+Updated October 24, 2026. The owner has now provided an account of hands-on feedback involving **one team member and several non-team users**. All described participants operated the software, according to the owner. The exact external/total count, dates, backgrounds and individual task records were not provided. This is qualitative retrospective feedback, not a controlled independent study. See the [anonymized English feedback record](user-feedback-2026-10-24.md).
 
 ## Existing evidence: first-party formative feedback
 
@@ -17,9 +17,15 @@ The project owner is a member of the two-person development team and also tried 
 
 The owner's stated learning outcome was clarifying an initially vague idea, describing requirements precisely, and decomposing a large feature into manageable parts. It is a self-report, not a formal skills assessment.
 
-## Additional owner-reported feedback — details pending
+## Additional hands-on feedback — recorded October 24
 
-On October 24, the owner stated that actual feedback already exists and requested help recording it in English. We have requested anonymous participant context, whether they used the app or viewed saved material, the actual observations, and approximate date/version if known. Independence, participant count, task outcomes and quotations are not assumed. No retroactive scores or timing measurements will be invented. The documented first-party feedback above remains valid.
+The owner's account identifies three stages:
+
+1. **Text-only overview:** users wanted a faster, more efficient scan, motivating visual explanations.
+2. **Initial deep reading:** a team member found the report mechanical and not practically useful. The team constrained the framework and revised format, length and generation requirements through repeated review.
+3. **Final version:** the owner reported shared positive views on the maturity and research usefulness of the content/framework, and on illustrations as concise visual summaries.
+
+The [full feedback record](user-feedback-2026-10-24.md) distinguishes participant context, changes and evidence limits. These are English paraphrases of the owner's account; no identifying or invented direct quotations are presented. Non-team participation is reported, but comments are not attributed individually and no numerical outcome is inferred. Actual use did not necessarily mean a fresh model generation in every session; that detail was not recorded.
 
 ## Optional further independent study protocol
 
@@ -66,4 +72,4 @@ A completed report should state the actual date, participant count/background, t
 
 ## Current conclusion
 
-The available evidence shows repeated first-party feedback and iterative fixes. It does **not yet demonstrate independent usability success, quantified time savings, improved comprehension, scientific accuracy, or willingness to pay**. Update this section when the owner supplies the actual feedback record or additional sessions are observed; do not infer that unrecorded feedback did not happen.
+The record supports a qualitative feedback-driven design history, with owner-reported hands-on involvement from both team and non-team users and favorable feedback on the later version. It does **not establish quantified time savings, improved comprehension, scientific accuracy, task success rates or market demand**. Exact participant counts and per-user attribution remain unknown. The optional protocol above is future work and must not be presented as a procedure used for these past sessions.

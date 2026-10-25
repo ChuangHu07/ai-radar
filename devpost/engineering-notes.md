@@ -46,3 +46,7 @@ New generation remains a paid external-provider operation. Explicit starts, comp
 ## Evidence still needed for a product claim
 
 Independent participants should try the main tasks and explain a paper in their own words. Record where they fail, whether they find original evidence, and which technical terms confuse them. A small formative study can guide improvements; it cannot establish broad learning efficacy or market demand.
+
+## Retrospective hands-on feedback
+
+The owner subsequently reported actual software use by one team member and several non-team users. Feedback motivated illustrations for faster scanning and constraints/revisions to the initial mechanical reading structure, format and length. The later version received favorable qualitative reactions in the owner's account. See [the English record](user-feedback-2026-10-24.md) for attribution and uncertainty; no measured productivity or accuracy gain is implied.

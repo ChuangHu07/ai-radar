@@ -166,7 +166,7 @@ One teammate can own frontend flow/state/localization and the other source acqui
 
 ## 8. Verification and limitations
 
-The recorded October 18 Windows checks passed 216 backend tests and the frontend production build, with a nonblocking bundle-size warning. This is historical evidence, not a claim of a new run today. Mocked tests do not prove model quality, live provider availability, or time saved. Real saved samples and first-party feedback are documented separately. macOS hardware verification remains unperformed. Additional owner-reported feedback has not yet been documented with participant context and observations.
+The recorded October 18 Windows checks passed 216 backend tests and the frontend production build, with a nonblocking bundle-size warning. This is historical evidence, not a claim of a new run today. Mocked tests do not prove model quality, live provider availability, or time saved. Real saved samples and first-party feedback are documented separately. macOS hardware verification remains unperformed. Owner-reported retrospective hands-on feedback now records a mixed team/non-team group and qualitative observations; exact count/dates and individual task outcomes remain unknown.
 
 Test boundaries include zero/few results, malformed/unavailable sources, abstract decisions, PDF limits, collection revisions, ten-paper limits, cancellation/retry, source/number checks, ranking mapping/retry stop, and language preservation. Inspect report math and evidence manually; neither a model review label nor test count certifies scientific accuracy.
 

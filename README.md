@@ -74,7 +74,7 @@ The current public scope, product requirements, specification and delivery recor
 - [Scope](devpost/scope.md), [PRD](devpost/prd.md), [technical specification](devpost/spec.md)
 - [Delivery evidence and remaining work](devpost/checklist.md), [app map](devpost/app-map.md)
 - [Engineering decisions and limits](devpost/engineering-notes.md)
-- [First-party feedback and independent validation protocol](devpost/user-validation.md) — independent participant records currently documented: zero; the owner reports additional feedback awaiting details
+- [First-party feedback and independent validation protocol](devpost/user-validation.md) — retrospective hands-on feedback from a mixed team/non-team group; exact count/dates and individual outcomes unknown
 
 ## Application screenshots
 
@@ -97,3 +97,5 @@ Actual English application views from the same saved examples used in the demo. 
 ![Separate two-paper joint report with original excerpt and physical PDF page reference](demo/screenshots/04-source-evidence.jpg)
 
 - [Official submission requirements review](devpost/submission-review.md) — cloud deployment deferred; no new live service claimed.
+
+- [Actual hands-on feedback, reported October 24](devpost/user-feedback-2026-10-24.md) — qualitative owner account; no invented metrics.

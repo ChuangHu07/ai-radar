@@ -22,15 +22,15 @@ The criteria cover design, potential impact, innovation and presentation. Screen
 
 - Four actual English application screenshots and captions are included in the submitted gallery.
 - [Engineering notes](engineering-notes.md) explain concrete design and reliability decisions.
-- [User validation](user-validation.md) separates documented first-party feedback, owner-reported feedback awaiting details, and an optional future study protocol.
+- [User validation](user-validation.md) separates documented first-party feedback, the recorded retrospective hands-on account, and an optional future study protocol.
 - No unsupported participant count, time saving, comprehension improvement, independent endorsement or market demand is claimed.
 
 ## Owner decision: defer cloud deployment
 
 The owner chose to prioritize the existing submission materials and real feedback instead of cloud deployment. Personal-website integration and a new public backend are deferred. No hosting subscription, DNS change, public inference endpoint, external visitor upload service or recurring charge is introduced for this revision.
 
-## Remaining information-dependent update
+## Feedback update completed
 
-The owner reports that actual feedback already exists. Obtain the anonymous participant context, what they actually used or viewed, their observations, approximate date/version if known, and any resulting changes. Record unknowns as unknown. Do not require retrospective timings, scores or formal questionnaires that were never collected. Translate and summarize faithfully in English, and keep direct quotations distinct from paraphrases.
+The owner supplied a retrospective account of actual software use by one team member and several non-team users. [The English feedback record](user-feedback-2026-10-24.md) documents scanability feedback, changes to the initial mechanical reading reports, and favorable qualitative reactions to the final content/framework and illustrations. Exact counts, dates, backgrounds and individual outcomes were not provided and remain explicitly unknown. This is not a controlled study, a set of verbatim quotations, or measured evidence of accuracy/time savings.
 
-Once supplied, add the real record to the validation page and update the existing Devpost description where useful. The missing details do not mean no feedback occurred, and the protocol must not be mistaken for completed sessions.
+The current submission incorporates this evidence without requiring new cloud deployment or reconstructing uncollected measurements. Additional structured participant sessions are optional future work.
